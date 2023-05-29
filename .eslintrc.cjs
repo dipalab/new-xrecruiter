@@ -20,7 +20,9 @@ module.exports = {
   rules: {
     indent: [2, 2],
     '@typescript-eslint/explicit-function-return-type': 'off',
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 0,
+    '@typescript-eslint/restrict-template-expressions': 'off'
   },
   settings: {
     react: {
