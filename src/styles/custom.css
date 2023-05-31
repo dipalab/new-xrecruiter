@@ -1,0 +1,21 @@
+#hero-gradient {
+	background: linear-gradient(90.21deg, #FF9A5C 0.13%, #8738FF 34.57%, #0074D9 64.49%, #413FFF 99.79%);
+	filter: blur(80px);
+	background-size: 300%;
+	animation: hero-gradient 5s ease infinite;
+}
+
+@keyframes hero-gradient {
+	0% {
+		background-position: 0% 25%;
+		opacity: 1;
+	}
+	50% {
+		background-position: 50% 25%;
+		opacity: 0.5;
+	}
+	100% {
+		background-position: 0% 25%;
+		opacity: 1;
+	}
+}

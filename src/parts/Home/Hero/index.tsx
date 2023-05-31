@@ -1,117 +1,57 @@
+import { useRef } from 'react'
+import RotateAnimation from '../../../animations/global/RotateAnimation'
+
 const Hero = () => {
+  const LogoRotateAnimationRef = useRef(null)
+
+  RotateAnimation({
+    animationRef: LogoRotateAnimationRef,
+    scrollTriggerRef: LogoRotateAnimationRef,
+    initialValue: -90,
+    durationValue: 1.5
+  })
+
   return (
     <>
-      <div className="isolate overflow-hidden bg-gray-900">
-        <div className="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="text-base font-semibold leading-7 text-indigo-400">Pricing</h2>
-            <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">The right price for you, <br className="hidden sm:inline lg:hidden" />whoever you are</p>
+      <div className="relative overflow-hidden bg-[#00081D]">
+        {/* xr logo background */}
+        <div className="absolute flex justify-end w-full h-full pt-[60px]">
+          <svg ref={LogoRotateAnimationRef} className="absolute -right-[255px] z-10" width="519" height="579" viewBox="0 0 519 579" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M410.571 118.832L36.9614 335.195M108.863 460.121L482.472 243.757M482.472 335.195L108.863 118.832M36.9614 243.757L410.571 460.121M187.836 505.848C187.836 545.679 220.027 577.969 259.737 577.969C299.447 577.969 331.638 545.679 331.638 505.848C331.638 466.016 299.447 433.726 259.737 433.726C220.027 433.726 187.836 466.016 187.836 505.848ZM187.836 73.1213C187.836 112.953 220.027 145.243 259.737 145.243C299.447 145.243 331.638 112.953 331.638 73.1213C331.638 33.2898 299.447 1 259.737 1C220.027 1 187.836 33.2898 187.836 73.1213ZM1 397.667C1 437.499 33.1912 469.788 72.9011 469.788C112.611 469.788 144.802 437.499 144.802 397.667C144.802 357.836 112.611 325.546 72.9011 325.546C33.1912 325.546 1 357.836 1 397.667ZM374.604 181.305C374.604 221.137 406.795 253.426 446.505 253.426C486.215 253.426 518.406 221.137 518.406 181.305C518.406 141.474 486.215 109.184 446.505 109.184C406.795 109.184 374.604 141.474 374.604 181.305ZM1 181.305C1 221.137 33.1912 253.426 72.9011 253.426C112.611 253.426 144.802 221.137 144.802 181.305C144.802 141.474 112.611 109.184 72.9011 109.184C33.1912 109.184 1 141.474 1 181.305ZM374.604 397.667C374.604 437.499 406.795 469.788 446.505 469.788C486.215 469.788 518.406 437.499 518.406 397.667C518.406 357.836 486.215 325.546 446.505 325.546C406.795 325.546 374.604 357.836 374.604 397.667Z" stroke="url(#paint0_linear_36600_5275)"/>
+            <defs>
+              <linearGradient id="paint0_linear_36600_5275" x1="238" y1="577.984" x2="81.5" y2="41.9844" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#0074D9" stopOpacity="0.8"/>
+                <stop offset="0.366655" stopColor="#413FFF" stopOpacity="0.6"/>
+                <stop offset="0.626095" stopColor="#8738FF" stopOpacity="0.6"/>
+                <stop offset="1" stopColor="#FF9A5C" stopOpacity="0.2"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        {/* hero content */}
+        <div className="relative mx-auto max-w-7xl text-center pb-[340px] pt-[136px] px-6 lg:px-8 xl:px-0">
+          <div className="mx-auto">
+            <p className="mt-2 text-white text-4xl sm:text-[56px] font-cera-pro-medium leading-[72px] tracking-[1px]">Powering the next <br />generation of recruiters</p>
+            <button
+              type="button"
+              className="mt-10 rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+            >
+        Button text
+            </button>
           </div>
-          <div className="relative mt-6">
-            <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.</p>
-            <svg viewBox="0 0 1208 1024" className="absolute -top-10 left-1/2 -z-10 h-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:-top-12 md:-top-20 lg:-top-12 xl:top-0">
-              <ellipse cx="604" cy="512" fill="url(#6d1bd035-0dd1-437e-93fa-59d316231eb0)" rx="604" ry="512" />
-              <defs>
-                <radialGradient id="6d1bd035-0dd1-437e-93fa-59d316231eb0">
-                  <stop stopColor="#7775D6" />
-                  <stop offset="1" stopColor="#E935C1" />
-                </radialGradient>
-              </defs>
-            </svg>
+          <div className="relative mt-[104px]">
+            <div className="absolute -top-10 left-1/2 -translate-x-1/2 sm:-top-12 md:-top-20 lg:-top-12 xl:top-0 w-[1144px] h-[260px]">
+              <div className="w-full h-full bg-red-300" id="hero-gradient"></div>
+            </div>
           </div>
         </div>
-        <div className="flow-root bg-white pb-24 sm:pb-32">
-          <div className="-mt-80">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2">
-                <div className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
-                  <div>
-                    <h3 id="tier-hobby" className="text-base font-semibold leading-7 text-indigo-600">Hobby</h3>
-                    <div className="mt-4 flex items-baseline gap-x-2">
-                      <span className="text-5xl font-bold tracking-tight text-gray-900">$49</span>
-                      <span className="text-base font-semibold leading-7 text-gray-600">/month</span>
-                    </div>
-                    <p className="mt-6 text-base leading-7 text-gray-600">Modi dolorem expedita deleniti. Corporis iste qui inventore pariatur adipisci vitae.</p>
-                    <ul role="list" className="mt-10 space-y-4 text-sm leading-6 text-gray-600">
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  5 products
-                      </li>
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  Up to 1,000 subscribers
-                      </li>
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  Basic analytics
-                      </li>
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  48-hour support response time
-                      </li>
-                    </ul>
-                  </div>
-                  <a href="#" aria-describedby="tier-hobby" className="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started today</a>
-                </div>
-                <div className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
-                  <div>
-                    <h3 id="tier-team" className="text-base font-semibold leading-7 text-indigo-600">Team</h3>
-                    <div className="mt-4 flex items-baseline gap-x-2">
-                      <span className="text-5xl font-bold tracking-tight text-gray-900">$79</span>
-                      <span className="text-base font-semibold leading-7 text-gray-600">/month</span>
-                    </div>
-                    <p className="mt-6 text-base leading-7 text-gray-600">Explicabo quo fugit vel facere ullam corrupti non dolores. Expedita eius sit sequi.</p>
-                    <ul role="list" className="mt-10 space-y-4 text-sm leading-6 text-gray-600">
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  Unlimited products
-                      </li>
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  Unlimited subscribers
-                      </li>
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  Advanced analytics
-                      </li>
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  1-hour, dedicated support response time
-                      </li>
-                      <li className="flex gap-x-3">
-                        <svg className="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
-                        </svg>
-                  Marketing automations
-                      </li>
-                    </ul>
-                  </div>
-                  <a href="#" aria-describedby="tier-team" className="mt-8 block rounded-md bg-indigo-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started today</a>
-                </div>
 
-                <div className="flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-2 lg:flex-row lg:items-center">
-                  <div className="lg:min-w-0 lg:flex-1">
-                    <h3 className="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Discounted</h3>
-                    <p className="mt-1 text-base leading-7 text-gray-600">Dolor dolores repudiandae doloribus. Rerum sunt aut eum. Odit omnis non voluptatem sunt eos nostrum.</p>
-                  </div>
-                  <a href="#" className="rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy discounted license <span aria-hidden="true">&rarr;</span></a>
-                </div>
+        {/* video */}
+        <div className="relative z-10 flow-root bg-white pb-24 sm:pb-32">
+          <div className="-mt-80">
+            <div className="mx-auto max-w-7xl">
+              <div className="flex flex-col justify-between rounded-3xl bg-white p-2 shadow-[0px_16px_48px_rgba(127,_137,_149,_0.24);] w-[1160px] h-[630px]">
               </div>
             </div>
           </div>

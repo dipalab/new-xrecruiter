@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "cera-pro-light";
+	font-weight: 300;
+	src: url("../assets/fonts/CeraProLight.ttf");
+}
+
+@font-face {
+	font-family: "cera-pro-regular";
+	font-weight: 400;
+	src: url("../assets/fonts/CeraProRegular.ttf");
+}
+
+@font-face {
+	font-family: "cera-pro-medium";
+	font-weight: 500;
+	src: url("../assets/fonts/CeraProMedium.ttf");
+}
+
+@font-face {
+	font-family: "cera-pro-bold";
+	font-weight: 700;
+	src: url("../assets/fonts/CeraProBold.ttf");
+}
+
+@font-face {
+	font-family: "cera-pro-extra-bold";
+	font-weight: 800;
+	src: url("../assets/fonts/CeraProExtraBold.ttf");
+}

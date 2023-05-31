@@ -7,18 +7,36 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'cera-pro-extra-bold': ['cera-pro-extra-bold', 'sans-serif'],
+        'cera-pro-bold': ['cera-pro-bold', 'sans-serif'],
+        'cera-pro-medium': ['cera-pro-medium', 'sans-serif'],
+        'cera-pro-regular': ['cera-pro-regular', 'sans-serif'],
+        'cera-pro-light': ['cera-pro-light', 'sans-serif']
+      },
       colors: {
         neutral: {
-          10: '#FCFCFC',
-          20: '#FAFAFA',
-          30: '#F4F4F5',
-          40: '#E4E4E7',
-          50: '#D1D1D6',
-          60: '#A0A0AB',
-          70: '#70707B',
-          80: '#3F3F46',
-          90: '#26272B',
-          100: '#18181B'
+          10: '#F7F9FA',
+          20: '#EAEDF0',
+          30: '#CBD2D9',
+          40: '#B8C1CC',
+          50: '#A9B4C0',
+          60: '#98A5B3',
+          70: '#7F8995',
+          80: '#656E77',
+          90: '#4C535A',
+          100: '#00081D'
+        },
+        brand: {
+          blue: '#4140FC',
+          purple: '#8738FF',
+          pink: '#FF47A7',
+          orange: '#FF9A5C',
+          green: '#00A38C'
+        },
+        blue: {
+          'primary-main': '#1C5BFC',
+          'primary-hover': '#7567FE'
         }
       },
       maxWidth: {
