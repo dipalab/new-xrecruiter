@@ -1,15 +1,17 @@
 import { useRef } from 'react'
-import RotateAnimation from '../../../animations/global/RotateAnimation'
+import { Button } from '../../../components'
+import { RotateAnimation, FadeUpAnimation } from '../../../animations/global'
 
 const Hero = () => {
+  const TagLineRef = useRef(null)
+  const HeroButtonRef = useRef(null)
+  const VideoRef = useRef(null)
   const LogoRotateAnimationRef = useRef(null)
 
-  RotateAnimation({
-    animationRef: LogoRotateAnimationRef,
-    scrollTriggerRef: LogoRotateAnimationRef,
-    initialValue: -90,
-    durationValue: 1.5
-  })
+  RotateAnimation({ animationRef: LogoRotateAnimationRef, scrollTriggerRef: LogoRotateAnimationRef, initialValue: -90, delayValue: 0, durationValue: 1.5 })
+  FadeUpAnimation({ animationRef: TagLineRef, scrollTriggerRef: TagLineRef, initialValue: 90, delayValue: 0.5, durationValue: 0.8 })
+  FadeUpAnimation({ animationRef: HeroButtonRef, scrollTriggerRef: HeroButtonRef, initialValue: 90, delayValue: 1, durationValue: 0.8 })
+  FadeUpAnimation({ animationRef: VideoRef, scrollTriggerRef: VideoRef, initialValue: 90, delayValue: 1.5, durationValue: 0.8 })
 
   return (
     <>
@@ -32,13 +34,10 @@ const Hero = () => {
         {/* hero content */}
         <div className="relative mx-auto max-w-7xl text-center pb-[340px] pt-[136px] px-6 lg:px-8 xl:px-0">
           <div className="mx-auto">
-            <p className="mt-2 text-white text-4xl sm:text-[56px] font-cera-pro-medium leading-[72px] tracking-[1px]">Powering the next <br />generation of recruiters</p>
-            <button
-              type="button"
-              className="mt-10 rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-            >
-        Button text
-            </button>
+            <p ref={TagLineRef} className="text-white text-4xl sm:text-[56px] font-cera-pro-medium leading-[72px] tracking-[1px]">Powering the next <br />generation of recruiters</p>
+            <div ref={HeroButtonRef} className="mt-10">
+              <Button>Apply Now</Button>
+            </div>
           </div>
           <div className="relative mt-[104px]">
             <div className="absolute -top-10 left-1/2 -translate-x-1/2 sm:-top-12 md:-top-20 lg:-top-12 xl:top-0 w-[1144px] h-[260px]">
@@ -48,7 +47,7 @@ const Hero = () => {
         </div>
 
         {/* video */}
-        <div className="relative z-10 flow-root bg-white pb-24 sm:pb-32">
+        <div ref={VideoRef} className="relative z-10 flow-root bg-white pb-24 lg:pb-[180px]">
           <div className="-mt-80">
             <div className="mx-auto max-w-7xl">
               <div className="flex flex-col justify-between rounded-3xl bg-white p-2 shadow-[0px_16px_48px_rgba(127,_137,_149,_0.24);] w-[1160px] h-[630px]">

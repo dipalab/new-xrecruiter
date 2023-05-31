@@ -2,24 +2,20 @@ import { Helmet } from 'react-helmet'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 import BaseLayout from '../layouts/BaseLayout'
-import { Hero, Work, Recruit } from '../parts/Home'
 
-const Home = () => {
+const Community = () => {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>XRecruiter | Home</title>
+        <title>XRecruiter | Community</title>
       </Helmet>
       <LazyLoadComponent>
         <BaseLayout>
-          <Hero />
-          <Work />
-          <Recruit />
         </BaseLayout>
       </LazyLoadComponent>
     </>
   )
 }
 
-export default Home
+export default Community

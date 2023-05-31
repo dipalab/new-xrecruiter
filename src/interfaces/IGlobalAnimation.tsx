@@ -1,6 +1,7 @@
 export interface IGlobalAnimation {
   animationRef: any
   scrollTriggerRef?: any
-  initialValue: number | string
+  initialValue: number
+  delayValue?: number
   durationValue: number
 }

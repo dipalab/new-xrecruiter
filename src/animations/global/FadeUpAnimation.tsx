@@ -2,15 +2,17 @@ import { useEffect } from 'react'
 import { gsap } from 'gsap'
 import { type IGlobalAnimation } from '../../interfaces/IGlobalAnimation'
 
-const RotateAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayValue, durationValue }: IGlobalAnimation) => {
+const FadeUpAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayValue, durationValue }: IGlobalAnimation) => {
   useEffect(() => {
     gsap.fromTo(
       animationRef.current,
       {
-        rotate: initialValue
+        opacity: 0,
+        translateY: initialValue
       },
       {
-        rotate: 0,
+        opacity: 1,
+        translateY: 0,
         duration: durationValue,
         delay: delayValue,
         scrollTrigger: scrollTriggerRef.current
@@ -19,4 +21,4 @@ const RotateAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayVa
   }, [])
 }
 
-export default RotateAnimation
+export default FadeUpAnimation
