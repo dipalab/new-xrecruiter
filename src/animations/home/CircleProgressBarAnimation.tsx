@@ -1,28 +1,24 @@
+
 import { useEffect } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import { type IGlobalAnimation } from '../../interfaces/IGlobalAnimation'
 
-const FadeUpAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayValue, durationValue }: IGlobalAnimation) => {
+const CircleProgressBarAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayValue, durationValue }: IGlobalAnimation) => {
   gsap.registerPlugin(ScrollTrigger)
 
   useEffect(() => {
     gsap.fromTo(
       animationRef.current,
+      { strokeDasharray: initialValue, strokeDashoffset: initialValue },
       {
-        opacity: 0,
-        translateY: initialValue
-      },
-      {
-        opacity: 1,
-        translateY: 0,
+        strokeDashoffset: 0,
         duration: durationValue,
-        delay: delayValue,
         scrollTrigger: scrollTriggerRef.current
       }
     )
   }, [])
 }
 
-export default FadeUpAnimation
+export default CircleProgressBarAnimation

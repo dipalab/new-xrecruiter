@@ -1,18 +1,51 @@
+import { useEffect, useRef, useState } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+import { DescriptionText, TitleText } from '../../../components'
+import CircleProgressBarAnimation from '../../../animations/home/CircleProgressBarAnimation'
+
 const Work = () => {
+  gsap.registerPlugin(ScrollTrigger)
+  const circlePercentageRef = useRef(null)
+  const [percentage, setPercentage] = useState(1)
+
+  CircleProgressBarAnimation({ animationRef: circlePercentageRef, scrollTriggerRef: circlePercentageRef, initialValue: 1000, durationValue: 7 })
+
+  // TODO: tigger useEffect agar run ketika sampai ke view
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (percentage < 95) setPercentage(percentage + 1)
+    }, 19)
+
+    return () => { clearTimeout(timeout) }
+  }, [percentage, circlePercentageRef])
+
   return (
     <>
-      <div className="overflow-hidden bg-white py-24 lg:pb-[170px]">
+      <div className="overflow-hidden bg-white pb-[104px] xl:pb-[170px]">
         <div className="mx-auto max-w-7xl md:px-6 lg:px-8 xl:px-0">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
-            <div className="pl-10">
-              <svg width="389" height="246" viewBox="0 0 389 246" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M389 194.5C389 166.77 383.071 139.361 371.609 114.11C360.148 88.8597 343.42 66.3518 322.547 48.096C301.674 29.8403 277.139 16.2588 250.587 8.26237C224.035 0.265975 196.081 -1.96043 168.598 1.73248C141.115 5.42538 114.739 14.9522 91.2399 29.674C67.7406 44.3959 47.6609 63.9723 32.3475 87.0904C17.0341 110.209 6.841 136.334 2.45187 163.714C-1.93727 191.095 -0.420982 219.097 6.89904 245.843L63.1793 230.44C58.0553 211.718 56.9939 192.116 60.0663 172.95C63.1387 153.784 70.2739 135.496 80.9933 119.313C91.7126 103.131 105.768 89.4271 122.218 79.1218C138.667 68.8166 157.13 62.1478 176.368 59.5627C195.606 56.9777 215.175 58.5362 233.761 64.1337C252.348 69.7311 269.522 79.2382 284.133 92.0172C298.744 104.796 310.454 120.552 318.477 138.227C326.499 155.903 330.65 175.089 330.65 194.5H389Z" fill="#0074D9"/>
-              </svg>
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 lg:grid-cols-2 lg:items-start">
+            <div className="relative flex justify-center lg:justify-start">
+              <div className="w-[280px] sm:w-[406px] xl:w-[470px] h-[240px] sm:h-[346px] xl:h-[400px] px-6 sm:px-[34px] xl:px-10 flex lg:items-center">
+                <div>
+                  <svg className="absolute w-[230px] sm:w-[336px] xl:w-[384px] h-[242px]" viewBox="0 0 384 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path ref={circlePercentageRef} d="M30.4962 234C30.4962 234 14.4347 179.237 43.9976 120C64.5302 78.8578 107.568 26.4994 186.5 26.5C267.471 26.5006 318.003 75.5807 339.5 120C352.96 147.813 356.713 175.246 357.039 196" stroke="#0074D9" strokeWidth="52"/>
+                  </svg>
+                  <svg className="w-[230px] sm:w-[336px] xl:w-[384px] h-[242px]" viewBox="0 0 384 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.4962 234C30.4962 234 14.4347 179.237 43.9976 120C64.5302 78.8578 107.568 26.4994 186.5 26.5C267.471 26.5006 318.003 75.5807 339.5 120C352.96 147.813 356.713 175.246 357.039 196C357.378 217.625 353.995 232 353.995 232" stroke="#F0F7FD" strokeWidth="52"/>
+                  </svg>
+                  <div className="text-center -mt-32 xl:-mt-28">
+                    <p className="text-[38px] sm:text-[55px] xl:text-[64px] leading-[50px] sm:leading-[74px] xl:leading-[86px] font-cera-pro-bold text-[#0074D9]">{ percentage }%</p>
+                    <p className="mt-3.5 sm:mt-[19px] xl:mt-[26px] text-base sm:text-[24px] xl:text-[32px] sm:leading-[36px] xl:leading-[40px] font-cera-pro-medium text-neutral-100">Earn up to</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
+            <div className="px-6 lg:px-0 flex items-center h-full">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-                <p className="text-[40px] leading-[56px] font-cera-pro-medium tracking-wider text-neutral-100">Work for yourself, <br /> not by yourself</p>
-                <p className="mt-6 text-[18px] leading-7 font-cera-pro-regular text-neutral-100">XRecruiter provides everything you need to feel confident to launch and manage your own recruitment agency, regardless of experience.</p>
+                <TitleText classNames="lg:!text-left">Work for yourself, <br /> not by yourself</TitleText>
+                <DescriptionText classNames="lg:!text-left mt-4 md:mt-6">XRecruiter provides everything you need to feel confident to launch and manage your own recruitment agency, regardless of experience.</DescriptionText>
               </div>
             </div>
           </div>
