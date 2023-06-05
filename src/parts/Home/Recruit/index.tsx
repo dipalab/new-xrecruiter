@@ -73,11 +73,11 @@ const Recruit = () => {
 
           {RecruitList.map((item) => (
             item.id === openTab &&
-              <div key={item.id} className="grid grid-cols-1 gap-y-16 md:gap-10 md:grid-cols-2 md:items-start mt-8 md:pt-10 bg-neutral-10 rounded-3xl">
-                <div className="lg:pl-10 max-w-[533px]">
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" className="text-[32px] leading-[40px] font-cera-pro-medium tracking-wider text-neutral-100">{ item.title }</p>
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="mt-4 text-base font-cera-pro-regular text-neutral-100">{ item.description }</p>
-                  <ul className="mt-6 space-y-4 xl:space-y-5">
+              <div key={item.id} className="grid grid-cols-1 md:gap-10 md:grid-cols-2 md:items-start mt-8 md:pt-6 lg:pt-10 bg-[#FAFBFC] rounded-2xl md:rounded-3xl">
+                <div className="p-6 md:pr-0 md:py-0 lg:pl-10 max-w-[533px]">
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" className="text-2xl md:text-[32px] md:leading-[40px] font-cera-pro-medium tracking-wider text-neutral-100">{ item.title }</p>
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="mt-2 md:mt-4 text-base font-cera-pro-regular text-neutral-100">{ item.description }</p>
+                  <ul className="mt-[26px] md:mt-6 pb-0 md:pb-6 lg:pb-0 space-y-4 xl:space-y-5">
                     {item.features.map((feature) => (
                       <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" key={feature} className="flex items-center space-x-3">
                         <CheckCircleIcon className="w-6 h-6 text-[#02AB91]" />
@@ -86,11 +86,11 @@ const Recruit = () => {
                     ))}
                   </ul>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" className="lg:px-0 w-full h-full flex justify-end items-start lg:items-end">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" className="pl-6 lg:px-0 w-full h-full flex justify-end items-start md:items-end">
                   <LazyLoadImage
                     src={item.image_url}
                     effect="blur"
-                    className="w-full lg:w-[452px] xl:w-[515px] h-[400px] lg:h-[435px] object-cover object-left rounded-tl-[24px] rounded-br-[24px]"
+                    className="w-full lg:w-[452px] xl:w-[515px] h-[300px] md:h-[400px] lg:h-[435px] object-cover object-left rounded-tl-[24px] rounded-br-[24px]"
                     alt=""
                   />
                 </div>

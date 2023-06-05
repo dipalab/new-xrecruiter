@@ -4,6 +4,7 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../../assets/logo-white-full.svg'
 import { Link } from 'react-router-dom'
+import { Button } from '../../components'
 
 const navigation = [
   { name: 'Our Mission', to: '#', current: true },
@@ -29,7 +30,7 @@ const Header = () => {
                     </Link>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
-                    <div className="flex space-x-[48px]">
+                    <div className="flex items-center space-x-[48px]">
                       {navigation.map((item) => (
                         <Link
                           key={item.name}
@@ -43,8 +44,8 @@ const Header = () => {
                         </Link>
                       ))}
 
-                      <Link to={''} className="text-white rounded-md text-sm font-cera-pro-regular">
-                        Login
+                      <Link to={''}>
+                        <Button classNames="!px-6 !py-[13px] !text-sm !leading-5 md:!text-sm md:!leading-5 !font-cera-pro-medium">Apply Now</Button>
                       </Link>
                       <Link to={''} className="text-white rounded-md text-sm font-cera-pro-regular">
                         Login
