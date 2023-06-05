@@ -13,73 +13,71 @@ const Recruit = () => {
 
   return (
     <>
-      <div className="overflow-hidden bg-white py-24 lg:py-[120px]">
-        <div className="mx-auto max-w-7xl md:px-6 lg:px-8 xl:px-0">
-          <div className="px-6 lg:px-0">
-            <div className="text-center">
-              <TitleText>You recruit, we take care of the rest</TitleText>
-              <nav className="flex justify-center space-x-2 mt-16">
-                <button
-                  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
-                  type="button"
-                  onClick={() => { setOpenTab(RecruitTabName.SETUP) }}
-                  className={clsx(
-                    openTab === RecruitTabName.SETUP ? 'bg-[#FF47A7] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
-                    'rounded-full px-8 py-3 text-sm font-cera-pro-medium'
-                  )}
-                >Set Up
-                </button>
-                <button
-                  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
-                  type="button"
-                  onClick={() => { setOpenTab(RecruitTabName.BRANDING) }}
-                  className={clsx(
-                    openTab === RecruitTabName.BRANDING ? 'bg-[#1C5BFC] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
-                    'rounded-full px-8 py-3 text-sm font-cera-pro-medium'
-                  )}
-                >Branding
-                </button>
-                <button
-                  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
-                  type="button"
-                  onClick={() => { setOpenTab(RecruitTabName.TECHNOLOGY) }}
-                  className={clsx(
-                    openTab === RecruitTabName.TECHNOLOGY ? 'bg-[#8738FF] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
-                    'rounded-full px-8 py-3 text-sm font-cera-pro-medium'
-                  )}
-                >Technology
-                </button>
-                <button
-                  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"
-                  type="button"
-                  onClick={() => { setOpenTab(RecruitTabName.RESOURCES) }}
-                  className={clsx(
-                    openTab === RecruitTabName.RESOURCES ? 'bg-[#FF9A5C] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
-                    'rounded-full px-8 py-3 text-sm font-cera-pro-medium'
-                  )}
-                >Resources
-                </button>
-                <button
-                  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
-                  type="button"
-                  onClick={() => { setOpenTab(RecruitTabName.ADMIN) }}
-                  className={clsx(
-                    openTab === RecruitTabName.ADMIN ? 'bg-[#00A38C] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
-                    'rounded-full px-8 py-3 text-sm font-cera-pro-medium'
-                  )}
-                >Admin
-                </button>
-              </nav>
-            </div>
+      <div className="overflow-hidden bg-white py-24 lg:pt-[104px] lg:pb-[88px] xl:py-[120px]">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 xl:px-0">
+          <div className="text-center">
+            <TitleText>You recruit, we take care of <br className="block lg:hidden" /> the rest</TitleText>
+            <nav className="flex flex-wrap justify-center md:space-x-2 mt-12 xl:mt-16">
+              <button
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                type="button"
+                onClick={() => { setOpenTab(RecruitTabName.SETUP) }}
+                className={clsx(
+                  openTab === RecruitTabName.SETUP ? 'bg-[#FF47A7] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
+                  'rounded-full px-[23.5px] md:px-8 py-2.5 md:py-3 text-sm font-cera-pro-medium'
+                )}
+              >Set Up
+              </button>
+              <button
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"
+                type="button"
+                onClick={() => { setOpenTab(RecruitTabName.BRANDING) }}
+                className={clsx(
+                  openTab === RecruitTabName.BRANDING ? 'bg-[#1C5BFC] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
+                  'rounded-full px-[23.5px] md:px-8 py-2.5 md:py-3 text-sm font-cera-pro-medium'
+                )}
+              >Branding
+              </button>
+              <button
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
+                type="button"
+                onClick={() => { setOpenTab(RecruitTabName.TECHNOLOGY) }}
+                className={clsx(
+                  openTab === RecruitTabName.TECHNOLOGY ? 'bg-[#8738FF] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
+                  'rounded-full px-[23.5px] md:px-8 py-2.5 md:py-3 text-sm font-cera-pro-medium'
+                )}
+              >Technology
+              </button>
+              <button
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"
+                type="button"
+                onClick={() => { setOpenTab(RecruitTabName.RESOURCES) }}
+                className={clsx(
+                  openTab === RecruitTabName.RESOURCES ? 'bg-[#FF9A5C] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
+                  'rounded-full px-[23.5px] md:px-8 py-2.5 md:py-3 text-sm font-cera-pro-medium'
+                )}
+              >Resources
+              </button>
+              <button
+                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
+                type="button"
+                onClick={() => { setOpenTab(RecruitTabName.ADMIN) }}
+                className={clsx(
+                  openTab === RecruitTabName.ADMIN ? 'bg-[#00A38C] text-white' : 'bg-white text-neutral-60 hover:text-neutral-80',
+                  'rounded-full px-[23.5px] md:px-8 py-2.5 md:py-3 text-sm font-cera-pro-medium'
+                )}
+              >Admin
+              </button>
+            </nav>
           </div>
 
           {RecruitList.map((item) => (
             item.id === openTab &&
-              <div key={item.id} className="grid grid-cols-1 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start mt-[72px]">
-                <div className="px-6 lg:px-0 xl:pl-10 max-w-[533px]">
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" className="text-[40px] leading-[56px] font-cera-pro-medium tracking-wider text-neutral-100">{ item.title }</p>
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="mt-6 text-base font-cera-pro-regular text-neutral-100">{ item.description }</p>
-                  <ul className="mt-6 space-y-5">
+              <div key={item.id} className="grid grid-cols-1 gap-y-16 md:gap-10 md:grid-cols-2 md:items-start mt-8 md:pt-10 bg-neutral-10 rounded-3xl">
+                <div className="lg:pl-10 max-w-[533px]">
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" className="text-[32px] leading-[40px] font-cera-pro-medium tracking-wider text-neutral-100">{ item.title }</p>
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="mt-4 text-base font-cera-pro-regular text-neutral-100">{ item.description }</p>
+                  <ul className="mt-6 space-y-4 xl:space-y-5">
                     {item.features.map((feature) => (
                       <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" key={feature} className="flex items-center space-x-3">
                         <CheckCircleIcon className="w-6 h-6 text-[#02AB91]" />
@@ -88,11 +86,11 @@ const Recruit = () => {
                     ))}
                   </ul>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" className="sm:px-6 lg:px-0 w-full h-full flex justify-end">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" className="lg:px-0 w-full h-full flex justify-end items-start lg:items-end">
                   <LazyLoadImage
                     src={item.image_url}
                     effect="blur"
-                    className="w-[515px] h-[435px]"
+                    className="w-full lg:w-[452px] xl:w-[515px] h-[400px] lg:h-[435px] object-cover object-left rounded-tl-[24px] rounded-br-[24px]"
                     alt=""
                   />
                 </div>

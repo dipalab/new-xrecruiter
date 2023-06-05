@@ -23,7 +23,7 @@ const Work = () => {
 
   return (
     <>
-      <div className="overflow-hidden bg-white pb-[104px] xl:pb-[170px]">
+      <div className="overflow-hidden bg-white pb-16 sm:pb-[104px] xl:pb-[170px]">
         <div className="mx-auto max-w-7xl md:px-6 lg:px-8 xl:px-0">
           <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 lg:grid-cols-2 lg:items-start">
             <div className="relative flex justify-center lg:justify-start">
