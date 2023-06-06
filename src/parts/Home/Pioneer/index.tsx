@@ -16,7 +16,7 @@ const Pioneer = () => {
 
   return (
     <>
-      <div className="relative grid grid-cols-1 md:block py-[64px] md:py-0">
+      <div className="relative grid grid-cols-1 md:block py-[64px] md:py-0 2xl:w-full 2xl:mx-auto 2xl:max-w-[1920px]">
         <div className="relative z-10 md:absolute w-full h-full flex justify-start items-center order-2 md:order-none">
           <div ref={ImageRef} className="w-full h-full">
             <LazyLoadImage
@@ -31,7 +31,7 @@ const Pioneer = () => {
           <div className="px-6 lg:px-10 xl:px-0 md:col-span-7 lg:col-span-8 xl:col-span-6">
             <div className="mx-auto lg:mx-0 lg:pl-32 xl:pl-10">
               <p ref={TitleRef} className="max-w-[505px] xl:max-w-[540px] text-2xl lg:text-[40px] leading-[36px] lg:leading-[56px] font-cera-pro-medium text-neutral-100">Pioneering an industry first approach to the future of recruitment</p>
-              <div ref={DescriptionRef} className="max-w-[350px] lg:max-w-[435px] xl:max-w-[530px]">
+              <div ref={DescriptionRef} className="max-w-[350px] lg:max-w-[435px] xl:max-w-[530px] font-cera-pro-regular">
                 <p className="mt-4 md:mt-6 text-base text-neutral-60">xrecruiter is uniting the recruitment industry like never before. By bringing together micro agencies from around the world, we{"'"}re creating a new future where recruiters have unprecedented access to resources, technology, branding and a community that collaborate and co-operate.</p>
               </div>
             </div>

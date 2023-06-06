@@ -4,6 +4,7 @@ import Recruit from './Recruit'
 import Earn from './Earn'
 import Future from './Future'
 import Pioneer from './Pioneer'
+import OurStory from './OurStory'
 
 export {
   Hero,
@@ -11,5 +12,6 @@ export {
   Recruit,
   Earn,
   Future,
-  Pioneer
+  Pioneer,
+  OurStory
 }
