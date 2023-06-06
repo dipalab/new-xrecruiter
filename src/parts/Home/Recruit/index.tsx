@@ -89,7 +89,6 @@ const Recruit = () => {
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" className="pl-6 lg:px-0 w-full h-full flex justify-end items-start md:items-end">
                   <LazyLoadImage
                     src={item.image_url}
-                    effect="blur"
                     className="w-full lg:w-[452px] xl:w-[515px] h-[300px] md:h-[400px] lg:h-[435px] object-cover object-left rounded-tl-[24px] rounded-br-[24px]"
                     alt=""
                   />
