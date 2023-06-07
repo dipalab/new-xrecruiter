@@ -5,6 +5,8 @@ import Earn from './Earn'
 import Future from './Future'
 import Pioneer from './Pioneer'
 import OurStory from './OurStory'
+import Peak from './Peak'
+import Connect from './Connect'
 
 export {
   Hero,
@@ -13,5 +15,7 @@ export {
   Earn,
   Future,
   Pioneer,
-  OurStory
+  OurStory,
+  Peak,
+  Connect
 }
