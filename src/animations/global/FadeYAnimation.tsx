@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import { type IGlobalAnimation } from '../../interfaces/IGlobalAnimation'
 
-const FadeUpAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayValue, durationValue }: IGlobalAnimation) => {
+const FadeYAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayValue, durationValue }: IGlobalAnimation) => {
   gsap.registerPlugin(ScrollTrigger)
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const FadeUpAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayVa
   }, [])
 }
 
-export default FadeUpAnimation
+export default FadeYAnimation

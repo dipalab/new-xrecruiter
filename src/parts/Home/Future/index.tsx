@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
-import { FadeUpAnimation, FadeXAnimation } from '../../../animations/global'
+import { FadeYAnimation, FadeXAnimation } from '../../../animations/global'
 import DashboardImage from '../../../assets/images/home/dashboard-1.svg'
 
 const Future = () => {
@@ -11,8 +11,8 @@ const Future = () => {
   const DescriptionRef = useRef(null)
 
   FadeXAnimation({ animationRef: ImageRef, scrollTriggerRef: ImageRef, initialValue: 500, delayValue: 1, durationValue: 1.5 })
-  FadeUpAnimation({ animationRef: TitleRef, scrollTriggerRef: TitleRef, initialValue: 90, delayValue: 0, durationValue: 0.8 })
-  FadeUpAnimation({ animationRef: DescriptionRef, scrollTriggerRef: DescriptionRef, initialValue: 90, delayValue: 0.5, durationValue: 0.8 })
+  FadeYAnimation({ animationRef: TitleRef, scrollTriggerRef: TitleRef, initialValue: 90, delayValue: 0, durationValue: 0.8 })
+  FadeYAnimation({ animationRef: DescriptionRef, scrollTriggerRef: DescriptionRef, initialValue: 90, delayValue: 0.5, durationValue: 0.8 })
 
   return (
     <>

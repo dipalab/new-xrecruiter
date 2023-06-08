@@ -1,9 +1,9 @@
 import RotateAnimation from './RotateAnimation'
-import FadeUpAnimation from './FadeUpAnimation'
+import FadeYAnimation from './FadeYAnimation'
 import FadeXAnimation from './FadeXAnimation'
 
 export {
   RotateAnimation,
-  FadeUpAnimation,
+  FadeYAnimation,
   FadeXAnimation
 }

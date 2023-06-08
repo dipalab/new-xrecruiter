@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 import BaseLayout from '../layouts/BaseLayout'
-import { Hero, Work, Recruit, Earn, Future, Pioneer, OurStory, Peak, Connect } from '../parts/Home'
+import { Hero, Work, Recruit, Earn, Future, Pioneer, OurStory, Peak, Connect, Testimonial } from '../parts/Home'
 
 const Home = () => {
   return (
@@ -22,6 +22,7 @@ const Home = () => {
           <OurStory />
           <Peak />
           <Connect />
+          <Testimonial />
         </BaseLayout>
       </LazyLoadComponent>
     </>

@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Button } from '../../../components'
-import { RotateAnimation, FadeUpAnimation } from '../../../animations/global'
+import { RotateAnimation, FadeYAnimation } from '../../../animations/global'
 
 const Hero = () => {
   const TagLineRef = useRef(null)
@@ -9,9 +9,9 @@ const Hero = () => {
   const LogoRotateAnimationRef = useRef(null)
 
   RotateAnimation({ animationRef: LogoRotateAnimationRef, scrollTriggerRef: LogoRotateAnimationRef, initialValue: -90, delayValue: 0, durationValue: 1.5 })
-  FadeUpAnimation({ animationRef: TagLineRef, scrollTriggerRef: TagLineRef, initialValue: 90, delayValue: 0.5, durationValue: 0.8 })
-  FadeUpAnimation({ animationRef: HeroButtonRef, scrollTriggerRef: HeroButtonRef, initialValue: 90, delayValue: 1, durationValue: 0.8 })
-  FadeUpAnimation({ animationRef: VideoRef, scrollTriggerRef: VideoRef, initialValue: 90, delayValue: 1.5, durationValue: 0.8 })
+  FadeYAnimation({ animationRef: TagLineRef, scrollTriggerRef: TagLineRef, initialValue: 90, delayValue: 0.5, durationValue: 0.8 })
+  FadeYAnimation({ animationRef: HeroButtonRef, scrollTriggerRef: HeroButtonRef, initialValue: 90, delayValue: 1, durationValue: 0.8 })
+  FadeYAnimation({ animationRef: VideoRef, scrollTriggerRef: VideoRef, initialValue: 90, delayValue: 1.5, durationValue: 0.8 })
 
   return (
     <>
