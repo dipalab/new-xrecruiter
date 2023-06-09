@@ -1,10 +1,10 @@
 import clsx from 'clsx'
-import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Logo from '../../assets/logo-white-full.svg'
 import { Link } from 'react-router-dom'
 import { Button } from '../../components'
+
+import Logo from '../../assets/logo-white-full.svg'
 
 const navigation = [
   { name: 'Our Mission', to: '#', current: true },
@@ -26,6 +26,7 @@ const Header = () => {
                         className="block h-8 w-auto"
                         src={Logo}
                         alt="Your Company"
+                        loading="lazy"
                       />
                     </Link>
                   </div>

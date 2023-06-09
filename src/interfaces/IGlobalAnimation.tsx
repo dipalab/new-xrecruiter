@@ -4,4 +4,5 @@ export interface IGlobalAnimation {
   initialValue: number
   delayValue?: number
   durationValue: number
+  animateTrigger?: any
 }

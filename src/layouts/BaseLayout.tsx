@@ -2,7 +2,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import { type IBaseLayout } from '../interfaces/IBaseLayout'
-// import Footer from '../parts/Footer'
+import Footer from '../parts/Footer'
 import Header from '../parts/Header'
 
 const BaseLayout = ({ children }: IBaseLayout) => {
@@ -16,7 +16,7 @@ const BaseLayout = ({ children }: IBaseLayout) => {
       <main className="overflow-hidden">
         {children}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

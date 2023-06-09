@@ -8,6 +8,7 @@ import OurStory from './OurStory'
 import Peak from './Peak'
 import Connect from './Connect'
 import Testimonial from './Testimonial'
+import PartnerSay from './PartnerSay'
 
 export {
   Hero,
@@ -19,5 +20,6 @@ export {
   OurStory,
   Peak,
   Connect,
-  Testimonial
+  Testimonial,
+  PartnerSay
 }

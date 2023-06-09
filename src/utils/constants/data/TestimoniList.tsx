@@ -28,7 +28,7 @@ const TestimoniList = [
   {
     id: TestimoniTabName.INDUSTRY_TALENT,
     title: 'Xrecruiter changed my life, thank you XR!',
-    body: 'I recently used the services of Xrecruiter for setting up my business and was thoroughly impressed with their level of expertise and dedication. From marketing to processes and support, Xrecruiter was able to provide me with the tools and guidance necessary to get my business up and running smoothly. I would highly recommend Xrecruiter to anyone in Recruitment considering starting their own agency!!! :)',
+    body: '<p>I recently used the services of Xrecruiter for setting up my business and was thoroughly impressed with their level of expertise and dedication. From marketing to processes and support, Xrecruiter was able to provide me with the tools and guidance necessary to get my business up and running smoothly.</p> <p class="mt-4 md:mt-6">I would highly recommend Xrecruiter to anyone in Recruitment considering starting their own agency!!! :)</p>',
     author_name: 'Krystal Smithers',
     author_position: 'Director',
     author_ava: IndustryTalentAvaImage,
@@ -37,7 +37,7 @@ const TestimoniList = [
   {
     id: TestimoniTabName.YAKKA_SOLUTIONS,
     title: "Starting my agency has been seamless with XR. I'm excited to build something special",
-    body: "“It's been great working with xrecruiter and being able to start Yakka Solutions with them, the onboarding process has been seamless and I'm really excited to be building something special with them.”",
+    body: "<p>“It's been great working with xrecruiter and being able to start Yakka Solutions with them, the onboarding process has been seamless and I'm really excited to be building something special with them.”</p>",
     author_name: 'Jack Creith',
     author_position: 'Director',
     author_ava: YakkaSolutionAvaImage,
@@ -46,7 +46,7 @@ const TestimoniList = [
   {
     id: TestimoniTabName.H_PEOPLE,
     title: 'Xrecruiter changed my life, thank you XR!',
-    body: 'A next generation online discussion forum. It has had a profound impact on the community-building aspect of the course. It is far more modern, user-friendly, interactive, and multi-faceted than any other platform out there, and we are making it the home of our student community.',
+    body: '<p>A next generation online discussion forum. It has had a profound impact on the community-building aspect of the course. It is far more modern, user-friendly, interactive, and multi-faceted than any other platform out there, and we are making it the home of our student community.</p>',
     author_name: 'Sam Hope & Jory Humphries',
     author_position: 'Director',
     author_ava: HPeopleAvaImage,
