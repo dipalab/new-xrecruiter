@@ -4,8 +4,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import { TitleText } from '../../../components'
 import { FadeXAnimation } from '../../../animations/global'
-import RSCAImage from '../../../assets/images/home/rsca.svg'
-import RSCAMobileImage from '../../../assets/images/home/rsca-mobile.svg'
+import RSCAImage from '../../../assets/images/home/rcsa.png'
+import RSCAMobileImage from '../../../assets/images/home/rcsa-mobile.png'
 
 const Peak = () => {
   const ImageRef = useRef(null)

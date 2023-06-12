@@ -8,7 +8,7 @@ const Hero = () => {
   const VideoRef = useRef(null)
   const LogoRotateAnimationRef = useRef(null)
 
-  RotateAnimation({ animationRef: LogoRotateAnimationRef, scrollTriggerRef: LogoRotateAnimationRef, initialValue: -90, delayValue: 0, durationValue: 1.5 })
+  RotateAnimation({ animationRef: LogoRotateAnimationRef, scrollTriggerRef: LogoRotateAnimationRef, initialValue: 360, delayValue: 1, durationValue: 10 })
   FadeYAnimation({ animationRef: TagLineRef, scrollTriggerRef: TagLineRef, initialValue: 90, delayValue: 0.5, durationValue: 0.8 })
   FadeYAnimation({ animationRef: HeroButtonRef, scrollTriggerRef: HeroButtonRef, initialValue: 90, delayValue: 1, durationValue: 0.8 })
   FadeYAnimation({ animationRef: VideoRef, scrollTriggerRef: VideoRef, initialValue: 90, delayValue: 1.5, durationValue: 0.8 })

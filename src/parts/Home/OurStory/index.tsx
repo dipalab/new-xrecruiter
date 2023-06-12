@@ -4,7 +4,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 import { TitleText } from '../../../components'
 import CardName from './CardName'
 
-import BlakeNDeclanImage from '../../../assets/images/home/blake-and-declan.svg'
+import BlakeNDeclanImage from '../../../assets/images/home/blake-and-declan.png'
 
 const OurStory = () => {
   return (

@@ -4,7 +4,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import { TitleText } from '../../../components'
 import { FadeXAnimation } from '../../../animations/global'
-import ConnectImage from '../../../assets/images/home/connect.svg'
+import ConnectImage from '../../../assets/images/home/connect.png'
 import ConnectAvaImage from '../../../assets/images/home/connect-ava.svg'
 
 const Connect = () => {

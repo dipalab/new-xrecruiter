@@ -8,15 +8,14 @@ const RotateAnimation = ({ animationRef, scrollTriggerRef, initialValue, delayVa
   gsap.registerPlugin(ScrollTrigger)
 
   useEffect(() => {
-    gsap.fromTo(
+    gsap.to(
       animationRef.current,
       {
-        rotate: initialValue
-      },
-      {
-        rotate: 0,
+        rotate: initialValue,
         duration: durationValue,
         delay: delayValue,
+        ease: 'none',
+        repeat: -1,
         scrollTrigger: scrollTriggerRef.current
       }
     )

@@ -2,9 +2,7 @@ import clsx from 'clsx'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
-import { Button } from '../../components'
-
-import Logo from '../../assets/logo-white-full.svg'
+import { Button, Logo } from '../../components'
 
 const navigation = [
   { name: 'Our Mission', to: '#', current: true },
@@ -21,13 +19,8 @@ const Header = () => {
               <div className="relative flex items-center justify-between">
                 <div className="flex justify-between items-center w-full">
                   <div className="flex items-center">
-                    <Link to="/">
-                      <img
-                        className="block h-8 w-auto"
-                        src={Logo}
-                        alt="Your Company"
-                        loading="lazy"
-                      />
+                    <Link to="/" className="block h-8 w-auto">
+                      <Logo />
                     </Link>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">

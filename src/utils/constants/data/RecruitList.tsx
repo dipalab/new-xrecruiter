@@ -1,8 +1,8 @@
-import SetUpImage from '../../../assets/images/home/recruit/setup.svg'
-import BrandingImage from '../../../assets/images/home/recruit/branding.svg'
-import TechnologyImage from '../../../assets/images/home/recruit/technology.svg'
-import ResourcesImage from '../../../assets/images/home/recruit/resources.svg'
-import AdminImage from '../../../assets/images/home/recruit/admin.svg'
+import SetUpImage from '../../../assets/images/home/recruit/setup.png'
+import BrandingImage from '../../../assets/images/home/recruit/branding.png'
+import TechnologyImage from '../../../assets/images/home/recruit/technology.png'
+import ResourcesImage from '../../../assets/images/home/recruit/resources.png'
+import AdminImage from '../../../assets/images/home/recruit/admin.png'
 
 const RecruitList = [
   {

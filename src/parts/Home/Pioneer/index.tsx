@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import { FadeYAnimation, FadeXAnimation } from '../../../animations/global'
-import DashboardImage from '../../../assets/images/home/dashboard-2.svg'
+import DashboardImage from '../../../assets/images/home/dashboard-2.png'
 
 const Pioneer = () => {
   const ImageRef = useRef(null)
