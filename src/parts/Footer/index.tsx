@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-[#00081D] rounded-t-[40px] lg:rounded-t-[80px] relative overflow-hidden">
+      <footer className="bg-[#00081D] rounded-t-[40px] lg:rounded-t-[80px] relative overflow-hidden max-w-[1920px] mx-auto">
         <div className="absolute w-full h-full">
           <div className="absolute -top-20 -left-[104px] md:-top-9 md:-left-9 xl:top-0 xl:left-0">
             <svg className="scale-[0.8] md:scale-95 xl:scale-100 w-[211px] h-[245px]" viewBox="0 0 211 245" fill="none" xmlns="http://www.w3.org/2000/svg">
