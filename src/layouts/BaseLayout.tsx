@@ -5,14 +5,14 @@ import { type IBaseLayout } from '../interfaces/IBaseLayout'
 import Footer from '../parts/Footer'
 import Header from '../parts/Header'
 
-const BaseLayout = ({ children }: IBaseLayout) => {
+const BaseLayout = ({ headerTheme, children }: IBaseLayout) => {
   AOS.init({
     once: true
   })
 
   return (
     <>
-      <Header />
+      <Header headerTheme={headerTheme} />
       <main className="overflow-hidden">
         {children}
       </main>

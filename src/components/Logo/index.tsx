@@ -1,7 +1,10 @@
+import clsx from 'clsx'
 import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react'
+import { type ILogo } from '../../interfaces/ILogo'
+import HeaderTheme from '../../utils/constants/variable/HeaderTheme'
 
-const Logo = () => {
+const Logo = ({ headerTheme }: ILogo) => {
   const firstDotRef = useRef(null)
   const secondDotRef = useRef(null)
   const thirdDotRef = useRef(null)
@@ -96,7 +99,7 @@ const Logo = () => {
             </linearGradient>
           </defs>
         </svg>
-        <svg width="117" height="21" className="fill-white mb-1" viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="117" height="21" className={clsx(headerTheme === HeaderTheme.LIGHT ? 'fill-neutral-100' : 'fill-white', 'mb-1')} viewBox="0 0 117 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14.3159 6.85938H10.1924L7.80646 10.4894L5.39417 6.85938H1.27259L5.70776 13.1574L0.960938 19.8442H5.08316L7.80646 15.8229L10.5041 19.8442H14.6263L9.8544 13.1317L14.3159 6.85938Z" />
           <path d="M22.7144 6.70703C21.3534 6.70703 20.1434 7.24809 19.281 8.23511V6.8619H15.8984V19.8467H19.5657V13.3675C19.5657 11.2707 20.7577 10.116 22.9213 10.116H23.9398V6.88503L23.8788 6.86639C23.5164 6.75458 23.1687 6.70703 22.7144 6.70703Z" />
           <path d="M31.509 6.57422C27.7017 6.57422 24.7188 9.55648 24.7188 13.3645C24.7188 17.2354 27.7711 20.1547 31.8194 20.1547C33.7266 20.1547 35.4693 19.5032 36.9993 18.2193L37.0565 18.1711L35.5181 15.6431L35.4417 15.7029C34.3184 16.5736 33.2003 16.9791 31.9228 16.9791C30.1313 16.9791 28.868 16.1199 28.4387 14.6162H37.3752L37.3913 14.5494C37.4466 14.3149 37.6265 13.4827 37.6265 12.6146C37.6258 9.11438 35.0535 6.57422 31.509 6.57422ZM31.3792 9.56934C32.9041 9.56934 33.9939 10.5576 34.0588 11.9842H28.4368C28.839 10.4915 29.9578 9.56934 31.3792 9.56934Z" />

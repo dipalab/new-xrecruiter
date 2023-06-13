@@ -23,11 +23,11 @@ const Hero = () => {
     gsap.to(
       Discord3DtRef.current,
       {
-        y: 0,
+        y: 70,
         duration: 1,
         delay: 0,
         ease: 'none',
-        repeat: -1
+        repeat: 0.5
       }
     )
   }, [])

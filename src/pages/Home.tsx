@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
+import HeaderTheme from '../utils/constants/variable/HeaderTheme'
 import BaseLayout from '../layouts/BaseLayout'
 import { Hero, Work, Recruit, Earn, Future, Pioneer, OurStory, Peak, Connect, Testimonial, PartnerSay } from '../parts/Home'
 
@@ -12,7 +13,7 @@ const Home = () => {
         <title>XRecruiter | Home</title>
       </Helmet>
       <LazyLoadComponent>
-        <BaseLayout>
+        <BaseLayout headerTheme={HeaderTheme.DARK}>
           <Hero />
           <Work />
           <Recruit />

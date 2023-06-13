@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
+import HeaderTheme from '../utils/constants/variable/HeaderTheme'
 import BaseLayout from '../layouts/BaseLayout'
 import { Hero } from '../parts/Community'
 
@@ -12,7 +13,7 @@ const Community = () => {
         <title>XRecruiter | Community</title>
       </Helmet>
       <LazyLoadComponent>
-        <BaseLayout>
+        <BaseLayout headerTheme={HeaderTheme.LIGHT}>
           <Hero />
         </BaseLayout>
       </LazyLoadComponent>
