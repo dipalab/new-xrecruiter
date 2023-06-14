@@ -19,3 +19,30 @@
 		opacity: 1;
 	}
 }
+
+
+
+
+#dedicate-swiper .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: 0px !important;
+}
+
+#dedicate-swiper .swiper-pagination .swiper-pagination-bullet {
+	width: 12px !important;
+	height: 12px !important;
+	background-color: #98A5B3 !important;
+}
+
+#dedicate-swiper .swiper-pagination .swiper-pagination-bullet-active {
+	background-color: #1C5BFC !important;
+}
+
+#dedicate-swiper .swiper-pagination {
+	display: block;
+}
+
+@media only screen and (min-width: 768px) {
+	#dedicate-swiper .swiper-pagination {
+		display: none;
+	}
+}

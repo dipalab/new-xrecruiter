@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { useRef, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
@@ -6,7 +7,6 @@ import { TitleText } from '../../../components'
 import { FadeYAnimation } from '../../../animations/global'
 import { TestimoniList, TestimoniTabList } from '../../../utils/constants/data/TestimoniList'
 import TestimoniTabName from '../../../utils/constants/variable/TestimoniTabName'
-import clsx from 'clsx'
 
 const Testimonial = () => {
   const CardRef = useRef(null)

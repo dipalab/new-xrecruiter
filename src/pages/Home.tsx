@@ -3,7 +3,7 @@ import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 import HeaderTheme from '../utils/constants/variable/HeaderTheme'
 import BaseLayout from '../layouts/BaseLayout'
-import { Hero, Work, Recruit, Earn, Future, Pioneer, OurStory, Peak, Connect, Testimonial, PartnerSay } from '../parts/Home'
+import { Hero, Work, Recruit, Earn, Future, Pioneer, OurStory, Peak, Connect, Testimonial, PartnerSay, Building } from '../parts/Home'
 
 const Home = () => {
   return (
@@ -18,6 +18,7 @@ const Home = () => {
           <Work />
           <Recruit />
           <Earn />
+          <Building />
           <Future />
           <Pioneer />
           <OurStory />
