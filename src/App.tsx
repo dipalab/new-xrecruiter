@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import OurMission from './pages/OurMission'
-import Comunity from './pages/Comunity'
+import Community from './pages/Community'
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/our-mission" element={<OurMission />} />
-          <Route path="/community" element={<Comunity />} />
+          <Route path="/community" element={<Community />} />
         </Routes>
       </Router>
     </>

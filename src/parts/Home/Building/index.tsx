@@ -58,6 +58,10 @@ const Building = () => {
                       slidesPerView: 1,
                       spaceBetween: 16
                     },
+                    640: {
+                      slidesPerView: 2.2,
+                      spaceBetween: 16
+                    },
                     768: {
                       slidesPerView: 2.5,
                       spaceBetween: 24

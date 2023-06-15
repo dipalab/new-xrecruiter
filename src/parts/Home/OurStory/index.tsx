@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
@@ -5,8 +6,13 @@ import { TitleText } from '../../../components'
 import CardName from './CardName'
 
 import BlakeNDeclanImage from '../../../assets/images/home/blake-and-declan.png'
+import BlakeDeclanPhotoAnimation from '../../../animations/home/BlakeDeclanPhotoAnimation'
 
 const OurStory = () => {
+  const BlakeDeclanPhotoRef = useRef(null)
+
+  BlakeDeclanPhotoAnimation({ animationRef: BlakeDeclanPhotoRef, scrollTriggerRef: BlakeDeclanPhotoRef, initialValue: 1.5, delayValue: 0, durationValue: 1 })
+
   return (
     <>
       <div className="bg-[#FAFBFC] py-16 md:py-24 xl:pt-[120px] xl:pb-[135px] max-w-[1920px] mx-auto">
@@ -20,7 +26,7 @@ const OurStory = () => {
           </div>
         </div>
 
-        <div className="w-full h-full lg:h-[515px] xl:h-[726px] 2xl:h-[766px] mt-[52px] md:mt-[72px] xl:mt-[88px]">
+        <div ref={BlakeDeclanPhotoRef} className="w-full h-full lg:h-[515px] xl:h-[726px] 2xl:h-[766px] mt-[52px] md:mt-[72px] xl:mt-[88px]">
           <LazyLoadImage
             src={BlakeNDeclanImage}
             className="w-full h-full"

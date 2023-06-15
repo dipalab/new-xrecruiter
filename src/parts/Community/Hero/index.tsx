@@ -20,7 +20,7 @@ const Hero = () => {
   FadeYAnimation({ animationRef: DescriptionRef, scrollTriggerRef: DescriptionRef, initialValue: 90, delayValue: 0.3, durationValue: 0.8 })
   FadeYAnimation({ animationRef: ButtonRef, scrollTriggerRef: ButtonRef, initialValue: 90, delayValue: 0.6, durationValue: 0.8 })
   FadeYAnimation({ animationRef: DiscordScreenRef, scrollTriggerRef: DiscordScreenRef, initialValue: 90, delayValue: 0.8, durationValue: 0.8 })
-  DiscordLogoAnimation({ animationRef: Discord3DtRef, scrollTriggerRef: Discord3DtRef, initialValue: -25, delayValue: 0, durationValue: 1 })
+  DiscordLogoAnimation({ animationRef: Discord3DtRef, scrollTriggerRef: Discord3DtRef, initialValue: -25, delayValue: 0, durationValue: 1.2 })
 
   return (
     <>
@@ -31,7 +31,7 @@ const Hero = () => {
               <h1 ref={TagLineRef} className="text-[40px] md:text-[48px] xl:text-[56px] leading-[56px] md:leading-[64px] xl:leading-[72px] text-neutral-100 font-cera-pro-medium">The home for <br className="md:block hidden" /> Recruitment Communities</h1>
               <p ref={DescriptionRef} className="mt-4 text-base text-neutral-60 font-cera-pro-regular">Ask questions, share ideas and build connections with eachother - all in the once place. <br className="md:block hidden" /> XR House enables healthy and productive recruitment collaboration.</p>
               <div ref={ButtonRef} className="mt-8 md:mt-10 flex items-center justify-center">
-                <a href="https://discord.gg/Y36yZxdZWh" target="_blank" rel="noreferrer" className="w-full">
+                <a href="https://discord.gg/Y36yZxdZWh" target="_blank" rel="noreferrer" className="w-full md:w-auto">
                   <Button classNames="!w-full md:!w-auto">
                     Join XR House
                     <ChevronRightIcon className="w-5 h-5 ml-2" />
