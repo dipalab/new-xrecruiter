@@ -3,7 +3,7 @@ import { LazyLoadComponent } from 'react-lazy-load-image-component'
 
 import HeaderTheme from '../utils/constants/variable/HeaderTheme'
 import BaseLayout from '../layouts/BaseLayout'
-import { Hero, Dedicated, Confession, Newsletter } from '../parts/Community'
+import { Hero, Dedicated, Confession, Newsletter, Collaborate } from '../parts/Community'
 
 const Community = () => {
   return (
@@ -18,6 +18,7 @@ const Community = () => {
           <Dedicated />
           <Confession />
           <Newsletter />
+          <Collaborate />
         </BaseLayout>
       </LazyLoadComponent>
     </>
