@@ -3,9 +3,13 @@ import { FreeMode } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/free-mode'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import { TitleText } from '../../../components'
 import { useState } from 'react'
+
+import FirstThumbnailImage from '../../../assets/images/home/thumbnail-1.png'
+import SecondThumbnailImage from '../../../assets/images/home/thumbnail-2.png'
 
 const PartnerSay = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -49,22 +53,40 @@ const PartnerSay = () => {
             style={ currentIndex > 0 ? { paddingRight: style } : { paddingLeft: style } }
           >
             <SwiperSlide>
-              <div className="animate-pulse w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">1</div>
+              <div className="w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">
+                <LazyLoadImage
+                  src={FirstThumbnailImage}
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="animate-pulse w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">2</div>
+              <div className="w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">
+                <LazyLoadImage
+                  src={SecondThumbnailImage}
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="animate-pulse w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">3</div>
+              <div className="w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">
+                <LazyLoadImage
+                  src={FirstThumbnailImage}
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="animate-pulse w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">4</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="animate-pulse w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">5</div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="animate-pulse w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">6</div>
+              <div className="w-[310px] sm:w-[420px] xl:w-[470px] h-[170px] sm:h-[218px] xl:h-[245px] bg-gray-300">
+                <LazyLoadImage
+                  src={SecondThumbnailImage}
+                  className="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>

@@ -7,6 +7,7 @@ import { TitleText } from '../../../components'
 import { FadeYAnimation } from '../../../animations/global'
 import { TestimoniList, TestimoniTabList } from '../../../utils/constants/data/TestimoniList'
 import TestimoniTabName from '../../../utils/constants/variable/TestimoniTabName'
+import DotBackground from './DotBackground'
 
 const Testimonial = () => {
   const CardRef = useRef(null)
@@ -22,7 +23,11 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className="bg-[#8738FF] h-[892px]">
+      <div className="bg-[#8738FF] h-[892px] relative">
+        <div className="w-full h-full absolute">
+          <DotBackground />
+        </div>
+
         <div className="relative py-16 md:py-24 xl:pb-12 xl:pt-[120px] h-full mx-auto max-w-7xl">
           <div className="relative h-full">
             {/* tabs */}
