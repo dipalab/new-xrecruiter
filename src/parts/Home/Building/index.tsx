@@ -27,7 +27,7 @@ const Building = () => {
   return (
     <>
       <div className="relative bg-white">
-        <div className="relative py-16 md:py-24 xl:pb-[112px] xl:pt-[120px]">
+        <div className="relative py-16 md:py-24 xl:py-[120px]">
           <div className="px-6 lg:px-10 xl:px-0 mx-auto max-w-7xl">
             <div ref={TitleRef} className="text-center max-w-[960px] mx-auto">
               <TitleText>Building the largest community</TitleText>
@@ -102,7 +102,7 @@ const Building = () => {
             </div>
 
             <div ref={ButtonRef} className="mt-10 flex justify-center">
-              <Button classNames="!w-full md:!w-auto">See All</Button>
+              <Button classNames="!w-full md:!w-auto !py-2.5">See All</Button>
             </div>
           </div>
         </div>

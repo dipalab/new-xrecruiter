@@ -2,7 +2,7 @@ const CardName = (data: object | any) => {
   return (
     <>
       <div className="text-center w-full">
-        <p className="text-base lg:text-2xl text-neutral-100 font-cera-pro-medium">{ data.name }</p>
+        <p className="text-base lg:text-2xl lg:leading-9 text-neutral-100 font-cera-pro-medium">{ data.name }</p>
         <a href={data.linkedin} target="_blank" className="flex items-center justify-center mt-2" rel="noreferrer">
           <p className="text-sm lg:text-base text-neutral-100 font-cera-pro-regular mr-1">Follow <span className="hidden sm:inline-block">{ data.name }</span> on</p>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

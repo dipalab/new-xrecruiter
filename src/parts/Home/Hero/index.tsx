@@ -49,10 +49,10 @@ const Hero = () => {
         </div>
 
         {/* video */}
-        <div className="relative z-10 flow-root bg-white pb-[55px] md:pb-24 lg:pb-[112px] xl:pb-[180px]">
+        <div className="relative z-10 flow-root bg-[#FAFBFC] pb-[55px] md:pb-24 lg:pb-[112px] xl:pb-[120px]">
           <div className="-mt-[130px] md:-mt-[280px] lg:-mt-[305px] xl:-mt-[340px]">
             <div className="mx-auto max-w-7xl px-6 md:px-10 xl:px-0">
-              <div ref={VideoRef} className="flex flex-col justify-between rounded-[7px] md:rounded-2xl lg:rounded-3xl bg-white p-2 shadow-[0px_16px_48px_rgba(127,_137,_149,_0.24)] w-full h-[200px] md:h-[400px] lg:h-[512px] xl:h-[630px]">
+              <div ref={VideoRef} className="flex flex-col justify-between rounded-[7px] md:rounded-2xl lg:rounded-3xl bg-white p-2 shadow-[0px_16px_48px_rgba(127,_137,_149,_0.24)] w-full h-[200px] md:h-[400px] lg:h-[512px] xl:h-[614px]">
               </div>
             </div>
           </div>

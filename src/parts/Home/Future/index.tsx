@@ -18,15 +18,16 @@ const Future = () => {
     <>
       <div className="relative grid grid-cols-1 md:block py-[64px] md:py-0 2xl:w-full 2xl:mx-auto 2xl:max-w-[1920px]">
         <div className="relative md:absolute w-full h-full flex justify-end items-center order-2 md:order-none">
-          <div ref={ImageRef} className="w-full h-full">
+          <div ref={ImageRef} className="w-full h-full md:max-h-[600px] xl:max-h-[700px]">
             <LazyLoadImage
               src={DashboardImage}
-              className="scale-[1.07] md:scale-100 md:absolute md:-right-24 xl:right-0 object-cover w-full md:w-[65%] lg:w-[57%] xl:w-1/2 h-[300px] sm:h-full"
+              className="scale-[1.07] md:scale-100 md:absolute md:-right-24 xl:-right-0 object-cover w-full md:w-[65%] lg:w-[57%] xl:w-auto h-[300px] sm:h-full"
               alt=""
             />
           </div>
         </div>
-        <div className="relative mx-auto max-w-7xl md:grid md:grid-cols-12 md:py-[88px] lg:py-[128px] xl:py-[183px] mb-12 md:mb-0">
+
+        <div className="relative mx-auto max-w-7xl md:grid md:grid-cols-12 md:py-[88px] lg:py-[128px] xl:py-[200px] mb-12 md:mb-0">
           <div className="px-6 lg:px-10 xl:px-0 md:col-span-7 lg:col-span-8 xl:col-span-6">
             <div className="mx-auto lg:mx-0">
               <p ref={TitleRef} className="max-w-[505px] xl:max-w-[540px] text-2xl lg:text-[40px] leading-[36px] lg:leading-[56px] font-cera-pro-medium text-neutral-100">The future of recruitment is becoming decentralised, Independant and Co-Op.</p>

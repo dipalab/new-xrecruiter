@@ -21,7 +21,7 @@ const OurStory = () => {
           <DotBackground />
         </div>
 
-        <div className="relative py-16 md:py-24 xl:pt-[120px] xl:pb-[135px] max-w-[1920px] mx-auto">
+        <div className="relative py-16 md:py-24 xl:py-[120px] max-w-[1920px] mx-auto">
           <div className="px-6 lg:px-10 mx-auto max-w-7xl">
             <div className="text-center">
               <TitleText>Our Story</TitleText>

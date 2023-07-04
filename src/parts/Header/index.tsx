@@ -60,7 +60,7 @@ const Header = ({ headerTheme }: IHeader) => {
                         </Link>
                         <Link to={''} className={clsx(
                           headerTheme === HeaderTheme.DARK ? 'text-white' : 'text-neutral-100',
-                          'text-sm font-cera-pro-regular'
+                          'text-sm font-cera-pro-regular underline'
                         )}>
                           Login
                         </Link>

@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'be-vietnam-pro': ['Be Vietnam Pro', 'sans-serif'],
         'cera-pro-extra-bold': ['cera-pro-extra-bold', 'sans-serif'],
         'cera-pro-bold': ['cera-pro-bold', 'sans-serif'],
         'cera-pro-medium': ['cera-pro-medium', 'sans-serif'],
