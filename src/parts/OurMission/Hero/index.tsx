@@ -42,11 +42,11 @@ const Hero = () => {
           <div className="text-left max-w-3xl px-6 md:px-10 xl:px-0">
             <h1 ref={TagLineRef} className="text-[40px] md:text-[48px] xl:text-[56px] leading-[56px] md:leading-[64px] xl:leading-[72px] text-white font-cera-pro-medium">Building a new era <br className="md:block hidden" /> of empowered recruiters</h1>
             <div ref={LogoRef} className="mt-6">
-              <p className="text-lg leading-8 text-gray-300">Krystal Smithers</p>
-              <div className="flex justify-start">
+              <p className="text-lg leading-8 text-white font-cera-pro-regular">Krystal Smithers</p>
+              <div className="flex justify-start mt-0.5">
                 <LazyLoadImage
                   src={IndustryTalentLogo}
-                  className="w-auto h-10"
+                  className="w-[164px] h-auto"
                   alt=""
                 />
               </div>

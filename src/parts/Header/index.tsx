@@ -36,7 +36,7 @@ const Header = ({ headerTheme }: IHeader) => {
                 <div className="relative w-full flex items-center justify-between">
                   <div className="flex justify-between items-center w-full">
                     <div className="flex items-center">
-                      <Link to="/" className="block h-8 w-auto">
+                      <Link to="/" className="block h-6 md:h-8 w-auto">
                         <Logo headerTheme={headerTheme} />
                       </Link>
                     </div>
@@ -56,7 +56,7 @@ const Header = ({ headerTheme }: IHeader) => {
                         ))}
 
                         <Link to={''}>
-                          <Button classNames="!px-6 !py-[13px] !text-sm !leading-5 md:!text-sm md:!leading-5 !font-cera-pro-medium">Apply Now</Button>
+                          <Button classNames="!px-4 !py-2.5 xl:!px-6 xl:!py-[13px] !text-sm !leading-5 md:!text-sm md:!leading-5 !font-cera-pro-medium">Apply Now</Button>
                         </Link>
                         <Link to={''} className={clsx(
                           headerTheme === HeaderTheme.DARK ? 'text-white' : 'text-neutral-100',

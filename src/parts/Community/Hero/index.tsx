@@ -51,10 +51,11 @@ const Hero = () => {
               </div>
             </div>
 
-            <div ref={DiscordScreenRef}>
+            <div ref={DiscordScreenRef} className="relative">
+              <div className="absolute w-full h-[182px] md:h-[526px] xl:h-[647px] blur-[13px] md:blur-[39px] xl:blur-[48px] bg-[linear-gradient(94deg,_rgba(255,_154,_92,_0.60)_0%,_rgba(135,_56,_255,_0.60)_34.56%,_rgba(0,_116,_217,_0.60)_64.58%,_rgba(65,_63,_255,_0.60)_100%)] md:bg-[linear-gradient(94deg,_rgba(255,_154,_92,_0.60)_0%,_rgba(135,_56,_255,_0.60)_34.56%,_rgba(0,_116,_217,_0.60)_64.58%,_rgba(65,_63,_255,_0.60)_100%)] xl:bg-[linear-gradient(94deg,_rgba(255,_154,_92,_0.60)_0%,_rgba(135,_56,_255,_0.60)_34.56%,_rgba(0,_116,_217,_0.60)_64.58%,_rgba(65,_63,_255,_0.60)_100%)]"></div>
               <LazyLoadImage
                 src={DiscordScreenshootImage}
-                className="w-full h-auto xl:h-[664px] rounded-lg shadow-[0px_16px_48px_rgba(127,_137,_149,_0.24)]"
+                className="relative w-full h-auto xl:h-[664px] rounded-sm md:rounded-lg shadow-[0px_16px_48px_0px_rgba(127,_137,_149,_0.24)]"
                 alt="App screenshot"
               />
             </div>

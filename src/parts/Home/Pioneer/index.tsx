@@ -18,15 +18,15 @@ const Pioneer = () => {
     <>
       <div className="relative grid grid-cols-1 md:block py-[64px] md:py-0 2xl:w-full 2xl:mx-auto 2xl:max-w-[1920px]">
         <div className="relative z-10 md:absolute w-full h-full flex justify-start items-center order-2 md:order-none">
-          <div ref={ImageRef} className="w-full h-full md:max-h-[600px] xl:max-h-[700px]">
+          <div ref={ImageRef} className="w-full h-full md:max-h-[600px] xl:max-h-[700px] pr-14 md:pr-0">
             <LazyLoadImage
               src={DashboardImage}
-              className="scale-[1.07] md:scale-100 md:absolute md:-left-28 xl:-left-0 object-cover w-full md:w-[65%] lg:w-[57%] xl:w-auto h-[300px] sm:h-full"
+              className="scale-[1.3] md:scale-100 md:absolute md:-left-28 xl:-left-0 object-cover w-full md:w-[65%] lg:w-[57%] xl:w-auto h-[350px] sm:h-full"
               alt=""
             />
           </div>
         </div>
-        <div className="relative mx-auto max-w-7xl md:grid md:grid-cols-12 md:py-[88px] lg:py-[148px] xl:py-[240px] mb-12 md:mb-0">
+        <div className="relative mx-auto max-w-7xl md:grid md:grid-cols-12 md:py-[88px] lg:py-[168px] xl:py-[240px] mb-12 md:mb-0">
           <div className="px-6 lg:px-10 xl:px-0 md:col-span-5 lg:col-span-4 xl:col-span-6"></div>
           <div className="px-6 lg:px-10 xl:px-0 md:col-span-7 lg:col-span-8 xl:col-span-6">
             <div className="mx-auto lg:mx-0 lg:pl-32 xl:pl-10">

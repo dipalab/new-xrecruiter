@@ -13,11 +13,11 @@ const Recruit = () => {
 
   return (
     <>
-      <div className="overflow-hidden bg-white py-24 lg:pt-[104px] lg:pb-[88px] xl:py-[120px]">
+      <div className="overflow-hidden bg-white py-16 md:py-24 lg:pt-[104px] lg:pb-[88px] xl:py-[120px]">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 xl:px-0">
           <div className="text-center">
             <TitleText>You recruit, we take care of <br className="block lg:hidden" /> the rest</TitleText>
-            <nav className="flex flex-wrap justify-center md:space-x-2 mt-12 xl:mt-16">
+            <nav className="flex flex-wrap justify-center md:space-x-2 mt-8 md:mt-12 xl:mt-16">
               <button
                 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
                 type="button"
@@ -73,15 +73,15 @@ const Recruit = () => {
 
           {RecruitList.map((item) => (
             item.id === openTab &&
-              <div key={item.id} className="grid grid-cols-1 md:gap-10 md:grid-cols-2 md:items-start mt-8 md:pt-6 lg:pt-10 bg-[#FAFBFC] rounded-2xl md:rounded-3xl">
-                <div className="p-6 md:pr-0 md:py-0 lg:pl-10 max-w-[533px]">
-                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" className="text-2xl md:text-[32px] md:leading-[40px] font-cera-pro-medium tracking-wider text-neutral-100">{ item.title }</p>
+              <div key={item.id} className="grid grid-cols-1 md:gap-10 md:grid-cols-2 md:items-start mt-6 md:mt-8 md:pt-6 lg:pt-10 bg-[#FAFBFC] rounded-2xl md:rounded-3xl overflow-hidden">
+                <div className="px-6 pb-[34px] pt-6 md:pr-0 md:py-0 lg:pl-10 max-w-[533px]">
+                  <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" className="text-2xl leading-9 md:text-[32px] md:leading-[40px] font-cera-pro-medium tracking-wider text-neutral-100">{ item.title }</p>
                   <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="mt-2 md:mt-4 text-base font-cera-pro-regular text-neutral-100">{ item.description }</p>
-                  <ul className="mt-[26px] md:mt-6 pb-0 md:pb-6 lg:pb-0 space-y-4 xl:space-y-5">
+                  <ul className="mt-6 pb-0 md:pb-6 lg:pb-0 space-y-4 xl:space-y-5">
                     {item.features.map((feature) => (
                       <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" key={feature} className="flex items-center space-x-3">
                         <CheckCircleIcon className="w-6 h-6 text-[#02AB91]" />
-                        <span className="text-base font-cera-pro-medium text-neutral-100">{ feature }</span>
+                        <span className="text-sm md:text-base font-cera-pro-medium text-neutral-100">{ feature }</span>
                       </li>
                     ))}
                   </ul>
@@ -89,7 +89,7 @@ const Recruit = () => {
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" className="pl-6 lg:px-0 w-full h-full flex justify-end items-start md:items-end">
                   <LazyLoadImage
                     src={item.image_url}
-                    className="w-full lg:w-[452px] xl:w-[515px] h-[300px] md:h-[400px] lg:h-[435px] object-cover object-left rounded-tl-[24px] rounded-br-[24px]"
+                    className="w-full lg:w-[452px] xl:w-[515px] h-[300px] md:h-[400px] lg:h-[435px] object-cover object-left rounded-tl-[24px] rounded-br-[24px] shadow-[0px_3.4px_41.9px_0px_rgba(0,_0,_0,_0.08)] md:shadow-[0px_6px_72px_0px_rgba(0,_0,_0,_0.08)]"
                     alt=""
                   />
                 </div>

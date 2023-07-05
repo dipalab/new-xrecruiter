@@ -58,7 +58,7 @@ const OurValue = () => {
               <p ref={DescriptionRef} className="mt-4 text-base text-neutral-60 font-cera-pro-regular">At the core of our mission and vision are the values guiding us in all that we do.</p>
             </div>
 
-            <div className="max-w-[480px] lg:max-w-[620px] xl:max-w-[865px] w-full grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-10 md:mt-14 xl:mt-16">
+            <div className="max-w-[480px] lg:max-w-[620px] xl:max-w-[865px] w-full grid grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-6 md:gap-y-10 mt-8 md:mt-14 xl:mt-16">
               <OurValueCard icon={<BetterTogether />} title="Better Together" description="Cooperation, collaboration, and unity. We’re all better when we’re working together." />
               <OurValueCard icon={<Trust />} title="Trust & Reliability" description="Become a beacon of truth and reliability. xrecruiter to be a brand name recruiters rely on." />
               <OurValueCard icon={<KeepSimple />} title="Keep it simple" description="Do the basics well and continue to serve the community in a straight forward and simple manner." />

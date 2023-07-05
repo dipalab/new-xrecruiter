@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="relative mx-auto max-w-7xl text-center pb-[130px] md:pb-[280px] lg:pb-[305px] xl:pb-[340px] pt-[112px] md:pt-[168px] xl:pt-[226px] px-11 lg:px-10 xl:px-0">
           <div className="mx-auto">
             <p ref={TagLineRef} className="text-white text-[32px] md:text-[48px] xl:text-[56px] leading-[40px] md:leading-[64px] xl:leading-[72px] font-cera-pro-medium tracking-[1px]">Powering the next <br className="hidden md:block" /> generation of recruiters</p>
-            <div ref={HeroButtonRef} className="mt-10">
+            <div ref={HeroButtonRef} className="mt-8 md:mt-10">
               <Button>Apply Now</Button>
             </div>
           </div>

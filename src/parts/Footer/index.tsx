@@ -44,7 +44,7 @@ const Footer = () => {
 
         <div ref={ctaRef} className="relative mx-auto max-w-7xl px-6 md:px-10 xl:px-0 py-16 md:pb-12 md:pt-[96px] xl:pb-10 xl:pt-[120px]">
           <div className="text-center">
-            <p className="text-2xl md:text-[32px] xl:text-[40px] md:leading-[40px] xl:leading-[56px] font-cera-pro-medium text-white mb-8 md:mb-10">The smartest recruiters are partnering with <br className="hidden md:block" /> xrecruiter and so should you.</p>
+            <p className="text-2xl leading-9 md:text-[32px] xl:text-[40px] md:leading-[40px] xl:leading-[56px] font-cera-pro-medium text-white mb-8 md:mb-10">The smartest recruiters are partnering with <br className="hidden md:block" /> xrecruiter and so should you.</p>
             <Button>Apply Now</Button>
           </div>
 
@@ -61,10 +61,10 @@ const Footer = () => {
 
             <div className="flex space-x-6 md:space-x-10 mt-4 md:mt-0">
               <Link to="">
-                <span className="text-sm text-white font-cera-pro-regular">Our Mission</span>
+                <span className="text-sm md:text-base text-white font-cera-pro-regular">Our Mission</span>
               </Link>
               <Link to="">
-                <span className="text-sm text-white font-cera-pro-regular">Community</span>
+                <span className="text-sm md:text-base text-white font-cera-pro-regular">Community</span>
               </Link>
             </div>
           </div>

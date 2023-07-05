@@ -62,7 +62,7 @@ const WhyJoin = () => {
             </defs>
           </svg>
         </div>
-        <div className="relative pb-[72px] pt-16 md:pb-[84px] md:pt-24 xl:py-[120px]">
+        <div className="relative py-16 md:pb-[84px] md:pt-24 xl:py-[120px]">
           <div className="px-6 lg:px-10 xl:px-0 mx-auto max-w-7xl">
             <div className="text-center flex flex-col">
               <div ref={TitleRef} className="flex items-center justify-center space-x-4">
@@ -78,7 +78,7 @@ const WhyJoin = () => {
               <p ref={DescriptionRef} className="mt-4 max-w-[500px] mx-auto text-base text-[#FFFFFF8F] font-cera-pro-regular">If it’s not obvious already let us outline a few of the thousands of reasons to join xrecruiter.</p>
             </div>
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-y-10 md:gap-x-6 xl:gap-6 mt-12 md:mt-16">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-4 md:gap-y-10 md:gap-x-6 mt-8 md:mt-16">
               <WhyJoinCard icon={<Market />} title="Market Credibility" description="xrecruiter provides agencies with improved market credibility, enabling them to secure more clients, win larger contracts, charge premium fees." />
               <WhyJoinCard icon={<Culture />} title="Culture" description="Join a culture of high performers and elevate your skillset and knowledge" />
               <WhyJoinCard icon={<Learning />} title="Learning & Support" description="Hands on support, Ongoing training and development and much more." />

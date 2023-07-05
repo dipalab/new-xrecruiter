@@ -34,7 +34,7 @@ const Market = () => {
 
   return (
     <>
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-8 md:w-7 xl:w-8 h-8 md:h-7 xl:h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path ref={fourthDotRef} d="M29.3307 29.332H2.66406C2.1174 29.332 1.66406 28.8787 1.66406 28.332C1.66406 27.7854 2.1174 27.332 2.66406 27.332H29.3307C29.8774 27.332 30.3307 27.7854 30.3307 28.332C30.3307 28.8787 29.8774 29.332 29.3307 29.332Z" fill="#1C5BFC"/>
         <path ref={secondDotRef} d="M13 5.33464V29.3346H19V5.33464C19 3.86797 18.4 2.66797 16.6 2.66797H15.4C13.6 2.66797 13 3.86797 13 5.33464Z" fill="#1C5BFC"/>
         <path ref={firstDotRef} d="M4 13.3346V29.3346H9.33333V13.3346C9.33333 11.868 8.8 10.668 7.2 10.668H6.13333C4.53333 10.668 4 11.868 4 13.3346Z" fill="#1C5BFC"/>

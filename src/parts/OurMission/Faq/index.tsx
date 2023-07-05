@@ -34,7 +34,7 @@ const Faq = () => {
               </div>
             </div>
 
-            <div className="mt-[70px] md:mt-16 grid grid-cols-1 gap-6">
+            <div className="mt-8 md:mt-14 xl:mt-16 grid grid-cols-1 gap-6">
               <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div ref={FirstCardRef} className="md:col-span-7 bg-neutral-10 p-6 md:p-10 rounded-[20px] md::rounded-3xl">
                   <FaqCard title="Does xrecruiter have ownership or equity stake in my new agency?" titleColor="text-[#1C5BFC]" description="Absolutely not. You own your business 100% - Put simply, we are a service provider to help recruiters launch and manage their agency at the highest level. (Think of it as a franchise model, but building your own brand instead of someone else's)" />

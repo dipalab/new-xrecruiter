@@ -16,17 +16,17 @@ const Peak = () => {
     <>
       <div className="bg-white py-16 md:pt-[104px] md:pb-24 xl:py-[120px]">
         <div className="px-6 lg:px-10 xl:px-0 mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-9 mt-4">
-            <div className="w-full flex justify-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-9">
+            <div className="w-full flex justify-start items-center">
               <div ref={ImageRef} className="max-w-[460px] xl:max-w-[512px]">
                 <LazyLoadImage
                   src={RSCAImage}
-                  className="w-full h-full hidden md:block"
+                  className="w-full h-[312px] xl:h-[332px] hidden md:block"
                   alt=""
                 />
                 <LazyLoadImage
                   src={RSCAMobileImage}
-                  className="w-full h-full block md:hidden"
+                  className="w-full h-[344px] block md:hidden"
                   alt=""
                 />
               </div>

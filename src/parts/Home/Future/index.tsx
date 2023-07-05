@@ -10,7 +10,7 @@ const Future = () => {
   const TitleRef = useRef(null)
   const DescriptionRef = useRef(null)
 
-  FadeXAnimation({ animationRef: ImageRef, scrollTriggerRef: ImageRef, initialValue: 500, delayValue: 1, durationValue: 1.5 })
+  FadeXAnimation({ animationRef: ImageRef, scrollTriggerRef: TitleRef, initialValue: 500, delayValue: 1, durationValue: 1.5 })
   FadeYAnimation({ animationRef: TitleRef, scrollTriggerRef: TitleRef, initialValue: 90, delayValue: 0, durationValue: 0.8 })
   FadeYAnimation({ animationRef: DescriptionRef, scrollTriggerRef: DescriptionRef, initialValue: 90, delayValue: 0.5, durationValue: 0.8 })
 
@@ -18,10 +18,10 @@ const Future = () => {
     <>
       <div className="relative grid grid-cols-1 md:block py-[64px] md:py-0 2xl:w-full 2xl:mx-auto 2xl:max-w-[1920px]">
         <div className="relative md:absolute w-full h-full flex justify-end items-center order-2 md:order-none">
-          <div ref={ImageRef} className="w-full h-full md:max-h-[600px] xl:max-h-[700px]">
+          <div ref={ImageRef} className="w-full h-full md:max-h-[530px] xl:max-h-[700px] pl-14 md:pl-0">
             <LazyLoadImage
               src={DashboardImage}
-              className="scale-[1.07] md:scale-100 md:absolute md:-right-24 xl:-right-0 object-cover w-full md:w-[65%] lg:w-[57%] xl:w-auto h-[300px] sm:h-full"
+              className="scale-[1.3] md:scale-100 md:absolute md:-right-24 xl:-right-0 object-cover w-full md:w-[65%] lg:w-[57%] xl:w-auto h-[360px] sm:h-full"
               alt=""
             />
           </div>
