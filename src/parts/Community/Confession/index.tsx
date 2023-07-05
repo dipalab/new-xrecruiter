@@ -7,7 +7,7 @@ import ConfessionImage from '../../../assets/images/community/confession-logo.pn
 import SpotifyImage from '../../../assets/images/community/spotify.png'
 import YoutubeImage from '../../../assets/images/community/youtube.png'
 import MacbookImage from '../../../assets/images/community/macbook.png'
-import IphoneImage from '../../../assets/images/community/iPhone.png'
+import IphoneImage from '../../../assets/images/community/iphone.png'
 import { Button } from '../../../components'
 
 const Confession = () => {
