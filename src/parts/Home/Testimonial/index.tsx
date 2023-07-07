@@ -86,7 +86,7 @@ const Testimonial = () => {
 
                           <div className="my-8 xl:my-10">
                             <p className="font-cera-pro-bold text-2xl leading-9 xl:text-[32px] xl:leading-[40px] text-neutral-100">{ item.title }</p>
-                            <p className="mt-4 font-cera-pro-regular text-base text-neutral-60" dangerouslySetInnerHTML={{ __html: item.body }}></p>
+                            <p className="mt-4 font-cera-pro-regular text-base md:text-sm xl:text-base text-neutral-60" dangerouslySetInnerHTML={{ __html: item.body }}></p>
                           </div>
 
                           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-between mt-2 sm:mt-0">
@@ -99,8 +99,8 @@ const Testimonial = () => {
                                 />
                               </div>
                               <div>
-                                <p className="font-cera-pro-medium text-base text-neutral-100">{ item.author_name }</p>
-                                <p className="mt-1 font-cera-pro-regular text-sm text-neutral-60">{ item.author_position }</p>
+                                <p className="font-cera-pro-medium text-base md:text-sm xl:text-base text-neutral-100">{ item.author_name }</p>
+                                <p className="mt-1 font-cera-pro-regular text-sm md:text-xs xl:text-sm text-neutral-60">{ item.author_position }</p>
                               </div>
                             </div>
                             <div className="h-6 md:h-8 xl:h-10 mt-6 sm:mt-0">

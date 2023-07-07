@@ -16,7 +16,7 @@ const OurStory = () => {
 
   return (
     <>
-      <div className="bg-[#FAFBFC] relative">
+      <div className="bg-[#FAFBFC] relative overflow-hidden">
         <div className="absolute w-full h-full">
           <DotBackground />
         </div>

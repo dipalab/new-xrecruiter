@@ -15,11 +15,11 @@ const Reaction = ({ likeCount, rocketCount }: IReaction) => {
             <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#98A5B3"/>
           </svg>
         </div>
-        <div className="text-[7px] leading-[10px] md:text-[13px] md:leading-5 xl:text-base xl:leading-6 px-1 md:px-2 xl:px-2.5 py-0.5 border border-neutral-30 rounded-full flex items-center">
+        <div className="text-[7px] leading-[10px] md:text-[13px] md:leading-5 xl:text-base xl:leading-6 px-1 md:px-2 xl:px-2.5 py-0.5 border border-neutral-30 rounded-full flex items-center bg-[#F7F9FA]">
           <span>👍🏻</span>
           <span className="font-cera-pro-regular ml-0.5">{likeCount}</span>
         </div>
-        <div className="text-[7px] leading-[10px] md:text-[13px] md:leading-5 xl:text-base xl:leading-6 px-1 md:px-2 xl:px-2.5 py-0.5 border border-neutral-30 rounded-full flex items-center">
+        <div className="text-[7px] leading-[10px] md:text-[13px] md:leading-5 xl:text-base xl:leading-6 px-1 md:px-2 xl:px-2.5 py-0.5 border border-neutral-30 rounded-full flex items-center bg-[#F7F9FA]">
           <span>🚀</span>
           <span className="font-cera-pro-regular ml-0.5">{rocketCount}</span>
         </div>

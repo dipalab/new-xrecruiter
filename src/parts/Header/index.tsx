@@ -92,7 +92,7 @@ const Header = ({ headerTheme }: IHeader) => {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6">
+                  <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#FAFBFC] px-6">
                     <div className="flex items-center justify-between h-16">
                       <Link to="/" className="block h-7 w-auto">
                         <Logo headerTheme={HeaderTheme.LIGHT} />
@@ -121,7 +121,7 @@ const Header = ({ headerTheme }: IHeader) => {
 
                           <div>
                             <Link to={''}>
-                              <Button classNames="!px-6 !py-[13px] !text-base !leading-5 md:!text-base md:!leading-5 !font-cera-pro-medium">Apply Now</Button>
+                              <Button classNames="!px-8 !py-[15px] !text-base !leading-5 md:!text-base md:!leading-5 !font-cera-pro-medium">Apply Now</Button>
                             </Link>
                           </div>
 

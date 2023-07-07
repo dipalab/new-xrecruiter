@@ -5,7 +5,7 @@ const WhyJoinCard = ({ icon, title, description }: IWhyJoinCard) => {
     <>
       <div>
         <div className="flex">
-          <div className="p-4 rounded-lg bg-neutral-10">
+          <div className="w-[64px] md:w-[56px] xl:w-[64px] h-[64px] md:h-[56px] xl:h-[64px] flex justify-center items-center rounded-lg bg-neutral-10">
             {icon}
           </div>
         </div>

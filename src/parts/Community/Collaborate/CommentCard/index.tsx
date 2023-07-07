@@ -29,7 +29,7 @@ const CommentCard = ({ comment }: ICommentCard) => {
         </div>
 
         {/* body */}
-        <div className="my-3">
+        <div className="my-2.5 xl:my-3">
           <p className="text-[9.5px] leading-[13px] md:text-[13px] md:leading-5 xl:text-base xl:leading-6 font-cera-pro-regular text-neutral-100 pr-1">{comment.body}</p>
         </div>
 

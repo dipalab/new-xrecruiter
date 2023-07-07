@@ -53,6 +53,7 @@ const Hero = () => {
           <div className="-mt-[130px] md:-mt-[280px] lg:-mt-[305px] xl:-mt-[340px]">
             <div className="mx-auto max-w-7xl px-6 md:px-10 xl:px-0">
               <div ref={VideoRef} className="flex flex-col justify-between rounded-[7px] md:rounded-2xl lg:rounded-3xl bg-white p-2 shadow-[0px_16px_48px_rgba(127,_137,_149,_0.24)] w-full h-[200px] md:h-[400px] lg:h-[512px] xl:h-[614px]">
+                <iframe src="https://drive.google.com/file/d/1f3cEI_sl6S3TxD_8nfyfoe7oC9nUFvGi/preview" className="w-full h-full md:rounded-xl lg:rounded-2xl" allow="autoplay"></iframe>
               </div>
             </div>
           </div>

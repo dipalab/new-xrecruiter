@@ -1,12 +1,11 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
 import BenImage from '../../../assets/images/community/ben.png'
 
 const BetterTogether = () => {
   return (
     <>
       <div className="bg-white max-w-[1920px] relative">
-        <div className="w-[162px] md:w-[340px] lg:w-[460px] xl:w-[542px] absolute right-6 md:right-10 xl:right-36 2xl:right-52 top-[120px] md:top-32 xl:top-[230px] z-10">
+        <div className="w-[162px] md:w-[340px] lg:w-[460px] xl:w-[542px] absolute right-6 md:right-10 xl:right-[140px] 2xl:right-52 top-[120px] md:top-32 xl:top-[230px] z-10">
           <div className="bg-white p-3.5 md:p-6 lg:p-8 xl:p-10 rounded-lg md:rounded-xl lg:rounded-3xl shadow-[0px_4px_40px_rgba(0,_0,_0,_0.06)]">
             <p className="font-cera-pro-medium text-neutral-100 text-sm md:text-xl lg:text-[32px] lg:leading-[40px] xl:text-[40px] xl:leading-[56px]">xrecruiter is uniting the industry because we’re #bettertogether</p>
             <div className="flex justify-between items-center mt-1.5 md:mt-3 lg:mt-4">
@@ -32,13 +31,15 @@ const BetterTogether = () => {
             </div>
           </div>
         </div>
-        <div className="py-16 md:py-[88px] relative">
-          <div className="-ml-20">
-            <LazyLoadImage
-              src={BenImage}
-              className="w-auto h-[263px] lg:h-[387px] xl:h-[578px]"
-              alt="App screenshot"
-            />
+        <div className="py-16 md:py-20 xl:py-[88px] relative">
+          <div className="-ml-20 md:-ml-0">
+            <div className="w-[395px] md:w-[580px] xl:w-[867px] h-[263px] lg:h-[387px] xl:h-[578px]">
+              <LazyLoadImage
+                src={BenImage}
+                className="w-full h-full object-cover"
+                alt="App screenshot"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Pioneer = () => {
   return (
     <>
       <div className="relative grid grid-cols-1 md:block py-[64px] md:py-0 2xl:w-full 2xl:mx-auto 2xl:max-w-[1920px]">
-        <div className="relative z-10 md:absolute w-full h-full flex justify-start items-center order-2 md:order-none">
+        <div className="relative z-10 md:absolute w-full h-full flex justify-start items-center order-2 md:order-none mt-5 md:mt-0">
           <div ref={ImageRef} className="w-full h-full md:max-h-[600px] xl:max-h-[700px] pr-14 md:pr-0">
             <LazyLoadImage
               src={DashboardImage}

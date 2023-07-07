@@ -58,10 +58,10 @@ const Collaborate = () => {
 
   return (
     <>
-      <div className="relative bg-white">
-        <div className="relative py-16 md:py-24 xl:pb-[112px] xl:pt-[120px]">
+      <div className="relative bg-[#FAFBFC]">
+        <div className="relative py-16 md:py-24 xl:pb-[120px] xl:pt-[120px]">
           <div className="px-6 lg:px-10 xl:px-0 mx-auto max-w-7xl">
-            <div className="text-center max-w-[830px] xl:max-w-[980px] mx-auto">
+            <div className="text-center max-w-[300px] sm:max-w-[830px] xl:max-w-[980px] mx-auto">
               <TitleText>Collaborate on jobs around the world</TitleText>
               <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="text-base text-neutral-60 font-cera-pro-regular mt-4">Supercharge your agency{"'"}s growth potential by diving into the XR marketplace. Gain access to an exclusive platform where you can scout live job opportunities posted by other recruiters, agree on split fees through a simple smart contract or join forces with other recruiters when submitting a bid for a preferred supplier agreement. XR marketplace allows you to find other like-minded agency owners who can complement your skillset, industry niche and recruitment style so you can start recruiting around the globe.</p>
             </div>
@@ -101,7 +101,7 @@ const Collaborate = () => {
 
                 <div className="col-span-2 lg:col-span-1 hidden md:flex items-center">
                   <div className="mr-4">
-                    <ArrowRightIcon className="w-6 h-6 text-blue-primary-main" />
+                    <ArrowRightIcon className="w-6 h-6 text-[#8738FF]" />
                   </div>
                   <p className="text-xs md:text-base lg:text-lg font-cera-pro-regular text-neutral-100">Help others fill vacancies or seek assistance with a difficult role you’ve landed. Discover true collaboration by leveraging the community.</p>
                 </div>
@@ -138,7 +138,7 @@ const Collaborate = () => {
                 </div>
 
                 <div className="absolute w-full h-full">
-                  <div className="flex items-center md:ml-1.5 mt-24 sm:mt-20 md:mt-6">
+                  <div className="flex items-center md:ml-1.5 mt-24 sm:mt-20 md:mt-8">
                     <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-neutral-30 bg-white flex items-center justify-center mr-3">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.3333 18.9596H6.66667C3.625 18.9596 1.875 17.2096 1.875 14.168V5.83464C1.875 2.79297 3.625 1.04297 6.66667 1.04297H13.3333C16.375 1.04297 18.125 2.79297 18.125 5.83464V14.168C18.125 17.2096 16.375 18.9596 13.3333 18.9596ZM6.66667 2.29297C4.28333 2.29297 3.125 3.4513 3.125 5.83464V14.168C3.125 16.5513 4.28333 17.7096 6.66667 17.7096H13.3333C15.7167 17.7096 16.875 16.5513 16.875 14.168V5.83464C16.875 3.4513 15.7167 2.29297 13.3333 2.29297H6.66667Z" fill="#98A5B3"/>
@@ -147,11 +147,11 @@ const Collaborate = () => {
                         <path d="M13.3307 14.793H6.66406C6.3224 14.793 6.03906 14.5096 6.03906 14.168C6.03906 13.8263 6.3224 13.543 6.66406 13.543H13.3307C13.6724 13.543 13.9557 13.8263 13.9557 14.168C13.9557 14.5096 13.6724 14.793 13.3307 14.793Z" fill="#98A5B3"/>
                       </svg>
                     </div>
-                    <p className="text-xs md:text-sm font-cera-pro-regular">Declan Kluver Submitted Proposal</p>
+                    <p className="text-xs md:text-sm font-cera-pro-regular text-neutral-100">Declan Kluver <span className="text-[#98A5B3]">Submitted Proposal</span></p>
                   </div>
 
                   <div className="absolute right-0 md:right-1.5 bottom-8 xl:bottom-10 flex items-center">
-                    <p className="text-xs md:text-sm font-cera-pro-regular">Declan Kluver create issued for Discussion</p>
+                    <p className="text-xs md:text-sm font-cera-pro-regular text-neutral-100">Declan Kluver <span className="text-[#98A5B3]">create issued for Discussion</span></p>
                     <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-neutral-30 bg-white flex items-center justify-center ml-3">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.3333 18.9596H6.66667C3.625 18.9596 1.875 17.2096 1.875 14.168V5.83464C1.875 2.79297 3.625 1.04297 6.66667 1.04297H13.3333C16.375 1.04297 18.125 2.79297 18.125 5.83464V14.168C18.125 17.2096 16.375 18.9596 13.3333 18.9596ZM6.66667 2.29297C4.28333 2.29297 3.125 3.4513 3.125 5.83464V14.168C3.125 16.5513 4.28333 17.7096 6.66667 17.7096H13.3333C15.7167 17.7096 16.875 16.5513 16.875 14.168V5.83464C16.875 3.4513 15.7167 2.29297 13.3333 2.29297H6.66667Z" fill="#98A5B3"/>
@@ -167,7 +167,7 @@ const Collaborate = () => {
                 <div className="pb-24 pt-4 md:py-[104px]">
                   <div className="ml-14 md:ml-0 md:hidden flex items-center">
                     <div className="mr-4">
-                      <ArrowRightIcon className="w-5 h-5 text-blue-primary-main" />
+                      <ArrowRightIcon className="w-5 h-5 text-[#8738FF]" />
                     </div>
                     <p className="text-xs font-cera-pro-regular">Help others fill vacancies or seek assistance with a difficult role you’ve landed. Discover true collaboration by leveraging the community.</p>
                   </div>
@@ -250,11 +250,11 @@ const Collaborate = () => {
                       </div>
                     </div>
 
-                    <div className="mt-3">
+                    <div className="mt-2.5 xl:mt-3">
                       <p className="text-[10px] md:text-sm xl:text-lg font-cera-pro-medium text-neutral-100">Here’s 3 candidates I’ve found</p>
 
                       {/* candidate list */}
-                      <ul className="mt-2 mb-2 md:mb-3 space-y-1 md:space-y-1.5 xl:space-y-2">
+                      <ul className="mt-2 mb-2 xl:mb-3 space-y-1 md:space-y-1.5 xl:space-y-2">
                         {[FirstCandidateAvaImage, SecondCandidateAvaImage, ThirdCandidateAvaImage].map((item, index) => (
                           <li className="text-[9px] leading-[13px] md:text-[13px] md:leading-5 xl:text-base xl:leading-6 flex items-center font-cera-pro-regular text-neutral-100" key={item}>
                             <div className="w-5 h-5 md:w-7 md:h-7 xl:w-8 xl:h-8 mr-1.5 md:mr-2 xl:mr-3">

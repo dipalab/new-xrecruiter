@@ -30,7 +30,7 @@ const Newsletter = () => {
           <div className="relative p-6 sm:p-8 md:p-12 xl:p-16 lg:flex justify-between items-center">
             <div className="text-left md:text-center lg:text-left w-full lg:max-w-[388px] xl:max-w-[450px]">
               <h2 className="text-[32px] leading-[40px] xl:text-[40px] xl:leading-[56px] font-cera-pro-medium text-white">Bi-Weekly Confessions Newsletter</h2>
-              <p className="mt-4 text-base font-cera-pro-regular text-neutral-60">Time poor recruiters can get up to speed quickly with our 2 minute read, confessions podcast summary newsletter!</p>
+              <p className="mt-4 text-base md:text-sm xl:text-base font-cera-pro-regular text-neutral-60">Time poor recruiters can get up to speed quickly with our 2 minute read, confessions podcast summary newsletter!</p>
             </div>
             <div className="relative mx-auto lg:mx-0 md:w-[400px] xl:w-[442px] mt-10 lg:mt-0">
               <input

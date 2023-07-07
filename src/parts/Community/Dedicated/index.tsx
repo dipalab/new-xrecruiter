@@ -101,7 +101,7 @@ const Dedicated = () => {
               </div>
             </div>
 
-            <div ref={ButtonRef} className="mt-10 flex justify-center">
+            <div ref={ButtonRef} className="mt-12 md:mt-10 flex justify-center">
               <Button classNames="!w-full md:!w-auto">XR Academy</Button>
             </div>
           </div>

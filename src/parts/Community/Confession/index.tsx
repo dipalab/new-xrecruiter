@@ -27,7 +27,7 @@ const Confession = () => {
 
   return (
     <>
-      <div className="bg-white py-16 md:py-24 xl:py-[120px]">
+      <div className="bg-[#FAFBFC] py-16 md:py-24 xl:py-[81px]">
         <div className="px-6 lg:px-10 xl:px-0 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-2">
             <div className="flex flex-col justify-center">
@@ -69,7 +69,7 @@ const Confession = () => {
             <div className="w-full h-full flex items-center sm:justify-end md:justify-start">
               <div className="w-auto sm:h-[404px] xl:h-[490px] relative">
                 <div ref={IphoneImageRef} className="z-10 relative">
-                  <div className="w-[88px] sm:w-[130px] xl:w-[160px] h-[125px] sm:h-[190px] xl:h-[230px] absolute left-20 sm:left-32">
+                  <div className="w-[88px] sm:w-[130px] xl:w-[160px] h-[125px] sm:h-[190px] xl:h-[230px] absolute left-20 md:left-28 xl:left-32">
                     <LazyLoadImage
                       src={IphoneImage}
                       className="w-full h-full"
@@ -82,7 +82,7 @@ const Confession = () => {
                   <div ref={MabcookImageRef} className="w-[401px] sm:w-[580px] xl:w-[690px] h-full sm:h-[390px] xl:h-[490px] md:absolute left-0">
                     <LazyLoadImage
                       src={MacbookImage}
-                      className="w-full h-full"
+                      className="w-full h-full scale-100 md:scale-105 xl:scale-100"
                       alt=""
                     />
                   </div>
