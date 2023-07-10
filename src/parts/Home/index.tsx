@@ -10,6 +10,7 @@ import Connect from './Connect'
 import Testimonial from './Testimonial'
 import PartnerSay from './PartnerSay'
 import Building from './Building'
+import BetterTogether from './BetterTogether'
 
 export {
   Hero,
@@ -23,5 +24,6 @@ export {
   Connect,
   Testimonial,
   PartnerSay,
-  Building
+  Building,
+  BetterTogether
 }
