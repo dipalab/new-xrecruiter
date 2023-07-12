@@ -41,7 +41,9 @@ const Newsletter = () => {
                 placeholder="Your work email"
               />
               <div className="md:absolute inset-y-0 right-0 flex items-center md:pr-1 mt-3 md:mt-0">
-                <Button classNames="!w-full md:!w-auto">Subscribe</Button>
+                <a href="https://www.linkedin.com/newsletters/7023526456177692672/">
+                  <Button classNames="!w-full md:!w-auto">Subscribe</Button>
+                </a>
               </div>
             </div>
           </div>

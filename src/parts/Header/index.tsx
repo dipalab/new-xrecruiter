@@ -58,12 +58,12 @@ const Header = ({ headerTheme }: IHeader) => {
                         <Link to={''}>
                           <Button classNames="!px-4 !py-2.5 xl:!px-6 xl:!py-[13px] !text-sm !leading-5 md:!text-sm md:!leading-5 !font-cera-pro-medium">Apply Now</Button>
                         </Link>
-                        <Link to={''} className={clsx(
+                        <a href="http://app.xrecruiter.io/" className={clsx(
                           headerTheme === HeaderTheme.DARK ? 'text-white' : 'text-neutral-100',
                           'text-sm font-cera-pro-regular underline'
                         )}>
                           Login
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -121,12 +121,12 @@ const Header = ({ headerTheme }: IHeader) => {
 
                           <div>
                             <Link to={''}>
-                              <Button classNames="!px-8 !py-[15px] !text-base !leading-5 md:!text-base md:!leading-5 !font-cera-pro-medium">Apply Now</Button>
+                              <Button classNames="!px-8 !py-[15px] !text-base !leading-6 md:!text-base md:!leading-6 !font-cera-pro-medium">Apply Now</Button>
                             </Link>
                           </div>
 
                           <div>
-                            <Link to={''} className="text-base font-cera-pro-medium underline text-neutral-100">
+                            <Link to="http://app.xrecruiter.io/" className="text-base font-cera-pro-medium underline text-neutral-100">
                             Login
                             </Link>
                           </div>

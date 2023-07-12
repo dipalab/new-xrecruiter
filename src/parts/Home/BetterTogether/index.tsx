@@ -12,7 +12,7 @@ const BetterTogether = () => {
       <div className="relative bg-[#4140FC]">
         <div className="relative py-16 md:py-24 xl:py-[120px]">
           <div className="text-center px-6 lg:px-10 xl:px-0 max-w-[960px] mx-auto">
-            <TitleText classNames="!text-white">#Better Together</TitleText>
+            <TitleText classNames="!text-white">#BetterTogether 🚀</TitleText>
             <DescriptionText classNames="!text-base !font-cera-pro-regular !text-[#FFFFFFCC] !flex !justify-center !items-center !space-x-[8.5px] !mt-4 md:!mt-[18px]">
               <span>Brands powered by</span>
               <LazyLoadImage

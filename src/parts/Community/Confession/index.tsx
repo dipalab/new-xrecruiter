@@ -62,7 +62,9 @@ const Confession = () => {
               </div>
 
               <div ref={ButtonRef} className="mt-8 xl:mt-10 flex justify-center sm:justify-start">
-                <Button classNames="!w-full sm:!w-auto">Subscribe</Button>
+                <a href="https://open.spotify.com/show/4d7TiqHZ6ItKuWZkMCKsyO?si=71f81dc364654708">
+                  <Button classNames="!w-full sm:!w-auto">Subscribe</Button>
+                </a>
               </div>
             </div>
 

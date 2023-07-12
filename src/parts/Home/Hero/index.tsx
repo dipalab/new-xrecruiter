@@ -38,7 +38,9 @@ const Hero = () => {
           <div className="mx-auto">
             <p ref={TagLineRef} className="text-white text-[32px] md:text-[48px] xl:text-[56px] leading-[40px] md:leading-[64px] xl:leading-[72px] font-cera-pro-medium tracking-[1px]">Powering the next <br className="hidden md:block" /> generation of recruiters</p>
             <div ref={HeroButtonRef} className="mt-8 md:mt-10">
-              <Button>Apply Now</Button>
+              <a href="https://apply.xrecruiter.io/form-1">
+                <Button>Apply Now</Button>
+              </a>
             </div>
           </div>
 
