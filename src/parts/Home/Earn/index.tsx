@@ -1,7 +1,19 @@
 import { Input, Label, Select, TitleText } from '../../../components'
 import LogoXRImage from '../../../assets/logo.svg'
+import LineChart from './LineChart'
+import { useEffect, useState } from 'react'
 
 const Earn = () => {
+  const [bill, setBill] = useState(null)
+  const [income, setIncome] = useState(null)
+  const [country, setCountry] = useState(null)
+
+  useEffect(() => {
+    console.log(bill)
+    console.log(income)
+    console.log(country)
+  }, [bill])
+
   return (
     <>
       <div className="overflow-hidden bg-[#FAFBFC] py-16 md:py-[96px] xl:py-[120px]">
@@ -21,6 +33,8 @@ const Earn = () => {
                   <Input
                     placeholder="Annual Billings"
                     classNames="mt-[5px] xl:mt-[6px]"
+                    type="number"
+                    onInput={(e: any) => { setBill(e.target.value) }}
                   />
                 </div>
                 <div>
@@ -30,6 +44,8 @@ const Earn = () => {
                   <Input
                     placeholder="Annual Income"
                     classNames="mt-[5px] xl:mt-[6px]"
+                    type="number"
+                    onInput={(e: any) => { setIncome(e.target.value) }}
                   />
                 </div>
                 <div>
@@ -38,6 +54,7 @@ const Earn = () => {
                   </div>
                   <Select
                     classNames="mt-[5px] xl:mt-[6px]"
+                    onChange={(e: any) => { setCountry(e.target.value) }}
                   >
                     <option value="">Australia</option>
                   </Select>
@@ -60,7 +77,7 @@ const Earn = () => {
                         <span className="font-cera-pro-regular text-[10px] md:text-xs xl:text-sm text-white">125.000 Income</span>
                       </div>
                       <div className="w-[40%] md:w-full h-full bg-neutral-10 flex justify-center items-center">
-                        <span className="font-cera-pro-regular text-[10px] md:text-xs xl:text-sm text-neutral-100">125.000 Billings</span>
+                        <span className="font-cera-pro-regular text-[10px] md:text-xs xl:text-sm text-neutral-100">{(!bill || bill === '') ? 0 : bill} Billings</span>
                       </div>
                     </div>
                   </div>
@@ -83,16 +100,47 @@ const Earn = () => {
                         <span className="font-cera-pro-regular text-[10px] md:text-xs xl:text-sm text-white">125.000 Income</span>
                       </div>
                       <div className="w-[40%] md:w-full h-full bg-neutral-10 flex justify-center items-center">
-                        <span className="font-cera-pro-regular text-[10px] md:text-xs xl:text-sm text-neutral-100">125.000 Billings</span>
+                        <span className="font-cera-pro-regular text-[10px] md:text-xs xl:text-sm text-neutral-100">{(!bill || bill === '') ? 0 : bill} Billings</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/* chart */}
+              <div className="grid grid-cols-2 gap-6">
+                <div className="p-6 border border-[#EAEDF0] rounded-2xl">
+                  <p className="font-cera-pro-medium text-neutral-100 text-lg mb-6 text-center">Earnings you’re missing!</p>
+                  <LineChart />
+                  <div className="flex justify-center items-center space-x-4 mt-4">
+                    <div className="flex items-center">
+                      <span className="w-2.5 h-2.5 bg-[#FF5A50] rounded-full mr-1.5"></span>
+                      <p className="text-xs text-neutral-100 font-cera-pro-regular">Currently</p>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="w-2.5 h-2.5 bg-[#00A38C] rounded-full mr-1.5"></span>
+                      <p className="text-xs text-neutral-100 font-cera-pro-regular">XRecruiter</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6 border border-[#EAEDF0] rounded-2xl">
+                  <p className="font-cera-pro-medium text-neutral-100 text-lg mb-6 text-center">Earnings you’re missing!</p>
+                  <LineChart />
+                  <div className="flex justify-center items-center space-x-4 mt-4">
+                    <div className="flex items-center">
+                      <span className="w-2.5 h-2.5 bg-[#FF5A50] rounded-full mr-1.5"></span>
+                      <p className="text-xs text-neutral-100 font-cera-pro-regular">Currently</p>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="w-2.5 h-2.5 bg-[#00A38C] rounded-full mr-1.5"></span>
+                      <p className="text-xs text-neutral-100 font-cera-pro-regular">XRecruiter</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </>
